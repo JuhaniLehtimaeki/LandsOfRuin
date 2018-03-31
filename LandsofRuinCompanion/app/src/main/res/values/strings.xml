@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lands of Ruin</string>
+    <string name="title_activity_main">Lands of Ruin</string>
+    <string name="title_activity_new_game">New Game</string>
+    <string name="title_activity_team_editor">TeamEditorActivity</string>
+    <string name="title_team_detail">Team Detail</string>
+    <string name="title_team_list">Teams</string>
+    <string name="title_activity_skill_tree">Skill Tree</string>
+    <string name="title_activity_wargear_selection">Select Wargear</string>
+    <string name="title_activity_device_communication">Connect to opponent</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="title_activity_game_lobby">GameLobbyActivity</string>
+    <string name="feedback_url">https://docs.google.com/forms/d/1cArr1fzKlSkNqQPnt9gUkIzRY1lR_TVcDhpwAmKVi0U/viewform</string>
+    <string name="zombie_turn">"1. Move all Zombies 5" towards the highlight on the map.\n2. Deploy any new Zombies.\n3. Perform Zombie attacks by tapping target models on the map.</string>
+    <string name="authenticator_label">Lands of Ruin</string>
+
+    <string name="undo_warning_text_default">Any random effects already shown will not be re-randomised when the turn is advanced again. However, it is worth noting that it is possible to
+    benefit from the knowledge of these random events after undoing the turn.</string>
+
+    <string name="end_game_explanation_text">Once both players agree to end the game remaining unresolved hits will be resolved and scenario objectives will be judged.
+        Once the game is ended it is not possible to continue playing anymore.</string>
+
+    <string name="game_mode_name_basic">Basic rules set</string>
+    <string name="game_mode_text_basic">The basic rule set is a limited set of rules to make it easier to learn the game mechanism and speedup the game pace.
+        \n\nThis game is played offline.
+    </string>
+
+    <string name="game_mode_name_advanced">Advanced</string>
+    <string name="game_mode_text_advanced">Advanced rules bring out the best of Lands of Ruin. All the rules are available. This is the recommended game mode once you have
+    familiarised yourself with the basic game play of Lands of Ruin.\n\nThis game is played offline.</string>
+
+    <string name="game_mode_name_online">Online</string>
+    <string name="game_mode_text_online">Join the battle in the Lands of Ruin online world. This battle will be tracked on the server and will affect the world. Your tribe will also gain Renown and Scrap.</string>
+
+        <string name="welcome_login_text"><![CDATA[
+    <b>Login, or create an account</b>
+    <br/><br/><br/>
+<br/>
+To play the game you will need a free Lands of Ruin account. This is used to create your tribe and track your progress as well as your purchases.
+<br/><br/>
+You can use Google, Facebook or twitter to login or create a user account using your email and password.
+<br/><br/>
+Tap the button below to get started!
+<br/><br/>
+]]></string>
+
+
+    <string name="welcome_text"><![CDATA[
+    <b>Greetings, Wasteland Survivors!</b>
+    <br/>
+<br/>
+It is our pleasure to welcome each of you to <b>Lands of Ruin® Early Access</b>. This is the first public version of the game that we have made available for testing. Please bear in mind that it is still in a very early state. We appreciate your contribution and feedback, as this will help us bring Lands of Ruin® to completion.
+<br/><br/>
+We would also like to thank the closed Beta Testers who have helped us improve the game over the last few years. This early access version includes many features and fixes that many of you requested.
+<br/><br/>
+We have great plans for Lands of Ruin® as we progress through Early Access, and beyond. Foremost, we will be looking to your feedback and bug reports to continuously improve the game.
+<br/><br/>
+Thank you for your community participation and continued support. We look forward to hearing your comments and feedback.
+<br/><br/>
+Please note that as we\'re in early stages of testing we might periodically wipe the user account data. Sorry for the inconvenience!
+]]></string>
+
+        <string name="welcome_text_two"><![CDATA[
+    <b>Hybrid game experience!</b>
+    <br/>
+<br/>
+Lands of Ruin is a hybrid tabletop game. It is played with miniatures on a tabletop with a friend.
+<br/><br/>
+To play the game you will need you tribe miniatures. You can use the official Lands of Ruin miniatures or any other suitable miniatures from your collection.
+<br/><br/>
+Note that you can import pictures of any 3rd party miniatures to the app so purchasing the official Lands of Ruin miniatures is not mandatory!
+<br/><br/>
+You will also need at least one (although 5 is recommended) 20-sided-dice, a measuring tape in inches (you\'ll only need to measure distances up to 20\") and about 10 (30 recommended) Rotter (zombie) miniatures
+ or tokens to track them. Both players need an Android tablet, Chromebook or a laptop running Bluestacks emulator. Beer is not required but recommended! We recommended a Bavarian Helles but we acknowledge your taste might be different (read: wrong).
+<br/><br/>
+If you don\'t yet have all the required stuff to play the game you can still check out the app and see how the game would work even in a single player mode.
+]]></string>
+
+
+    <string name="early_access_text">Early Access pre-release version</string>
+    <string name="title_activity_feedback_and_rules">FeedbackAndRulesActivity</string>
+
+        <string name="help_text"><![CDATA[
+    <b>Learning to play Lands of Ruin</b>
+    <br/>
+<br/>
+Lands of Ruin is a tabletop strategy game played together with this tablet app. To play the game the players must first learn the game rules or play the tutorial scenario to learn.
+<br/><br/>
+The best place to start is our website where we list resources you can read, download and videos to watch.
+<br/><br/>
+This app also contains a lot of helpful resources to get started. Take a look at the various tutorial help screens to learn about different pars of the game.
+]]></string>
+            <string name="contact_text"><![CDATA[
+    <b>Contact us - Support</b>
+    <br/>
+<br/>
+You can reach to us via multiple different ways. If you have any problems, feedback, ideas or for any other reason please don\'t hesitate to contact us. We want to hear from you.
+]]></string>
+
+
+    <string name="title_activity_battle_report_tabs">Battle Report</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="connectivity_help">
+        Nearby games in the same WIFI network will appear on the list above. If you don\'t see a game above make sure that the host player\'s tablet is connected to the same WIFI network and that the network doesn\'t
+        prevent device discovery as well as that the host has started a game using the New Game button.
+    </string>
+    <string name="players_setup_admin_text">Once all players have joined your game, press the Start Game button. Players can join the game by selecting Join Nearby Games on their tablet.</string>
+    <string name="players_setup_non_admin_text">You have joined the game. Wait for all players to join and the host to start the game.</string>
+    <string name="scenario_select_non_admin_text">The host player is selecting the scenario. Please wait.</string>
+    <string name="map_select_non_admin_text">The host player is selecting the map. Please wait.</string>
+    <string name="bluestacks_warning">It looks like you might be on Bluestacks emulator (if not just ignore this).\nUnfortunately Bluestacks doesn\'t support hosting a game yet. However, you can join a game hosted on another device!</string>
+    <string name="tutorial_1_description">This tutorial will teach you how to perform a ranged attack.</string>
+    <string name="tutorial_1_table_setup">Place your character on the table and 2 rotter models next to each other 15\'\' away from your character.\n\nThere\'s no need for terrain or any other models for this tutorial.</string>
+
+
+</resources>

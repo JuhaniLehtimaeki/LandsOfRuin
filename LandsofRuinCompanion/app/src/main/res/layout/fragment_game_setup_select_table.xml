@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/command_panel_background"
+    android:clickable="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/groups"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <com.landsofruin.companion.view.MechaFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="filter"
+            android:textColor="#FFFFFFFF"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="bottom"
+            android:background="#037790" />
+
+        <com.landsofruin.companion.view.MechaFontTextView
+            android:id="@+id/all_maps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/clickable_transparent_background"
+            android:padding="16dp"
+            android:text="all" />
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="150dp"
+            android:layout_marginTop="150dp" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/pager_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_margin="60dp" />
+
+        <com.landsofruin.companion.view.MechaFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="80dp"
+            android:text="swipe to change the map" />
+
+
+    </FrameLayout>
+
+</LinearLayout>

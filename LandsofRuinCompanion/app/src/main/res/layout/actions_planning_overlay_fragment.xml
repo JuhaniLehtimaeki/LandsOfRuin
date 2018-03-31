@@ -1,0 +1,183 @@
+<com.landsofruin.companion.view.ClipedCommandPanelFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/command_panel_background"
+    android:clickable="true"
+    android:foreground="@drawable/command_panel_line">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/command_panel_top_gradient"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="8dp"
+                    android:background="#350e8799"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:paddingTop="4dp"
+                    app:corner2="8dp"
+                    app:corner4="8dp">
+
+                    <com.landsofruin.companion.view.MechaFontTextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="#FFda7a04"
+                        android:textSize="24sp" />
+
+                </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                    android:id="@+id/hide_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right|top"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/solid_blue_button_background"
+                    android:padding="8dp"
+                    app:corner1="8dp"
+                    app:corner2="8dp"
+                    app:corner3="8dp"
+                    app:corner4="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/close_button_blue" />
+
+                </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                    android:id="@+id/assigned_actions_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="8dp"
+                    android:background="#350e8799"
+                    android:minWidth="200dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:paddingTop="4dp"
+                    app:corner4="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/assigned_actions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal" />
+                </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+
+                <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                    android:id="@+id/aps_left_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="8dp"
+                    android:background="#350e8799"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:paddingTop="4dp"
+                    app:corner4="8dp">
+
+                    <com.landsofruin.companion.view.MechaFontTextView
+                        android:id="@+id/aps_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="16sp" />
+                </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            android:paddingBottom="22dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/available_actions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:id="@+id/squad_hint_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/info_container_background"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="66dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="16dp"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="32sp" />
+            </FrameLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/change_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/command_panel_background"
+        android:visibility="gone" />
+
+</com.landsofruin.companion.view.ClipedCommandPanelFrameLayout>

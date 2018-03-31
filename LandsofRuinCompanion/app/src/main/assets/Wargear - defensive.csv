@@ -1,0 +1,7 @@
+Type- 0,Category-1,ID-2,group-ID-3,Name-4,Requires skills-5,Defensive modifier shooting -6,Defensive modifier CC -7,Defensive modifier zombies -8,Movement modifier -9,Movement modifier % -10,Weight -11,Defensive modifier explosives -12,Camo modifier-13,GEAR value -14,maintanance GEAR value -15
+Defensive,Armor,5000,5000,Combat shield,12,2,1,4,0,0,4,1,-30,20,5
+Defensive,Armor,5001,5001,Heavy clothing,10,0,1,2,0,0,2,0,-10,10,5
+Defensive,Armor,5002,5002,Armor west,10,1,0,1,0,0,2,0,-5,15,5
+Defensive,Armor,5003,5003,Flak armor,10,2,1,2,0,0,5,1,-15,25,10
+Defensive,Armor,5004,5004,Camoflage cloak,15,0,0,1,0,0,1,0,10,10,5
+Defensive,Armor,5005,5005,Balean plated armor,10,2,1,2,0,0,5,1,-15,25,10

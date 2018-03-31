@@ -1,0 +1,31 @@
+<resources>
+
+
+    <dimen name="friendly_card_layout_width">450dp</dimen>
+
+    <dimen name="friendly_card_width">425dp</dimen>
+    <dimen name="friendly_card_height">310dp</dimen>
+
+    <dimen name="shooting_ui_indicator_size">56dp</dimen>
+    <dimen name="shooting_ui_indicator_corner_size">16dp</dimen>
+    <dimen name="shooting_ui_info_textsize">18sp</dimen>
+
+    <dimen name="shooting_ui_info_textsize_planning">10sp</dimen>
+    <dimen name="shooting_ui_indicator_size_planning">32dp</dimen>
+    <dimen name="shooting_ui_indicator_corner_size_planning">10dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="setup_team_button_right_margin">200dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="toolbar_height">60dp</dimen>
+
+
+    <dimen name="range_ruler_width">8dp</dimen>
+    <dimen name="range_box_width">2dp</dimen>
+
+
+</resources>

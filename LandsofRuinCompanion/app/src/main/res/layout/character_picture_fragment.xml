@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <FrameLayout
+            android:layout_width="@dimen/friendly_card_width"
+            android:layout_height="@dimen/friendly_card_height"
+            android:layout_margin="24dp"
+            android:background="@drawable/card_background_horizontal">
+
+            <ImageView
+                android:id="@+id/card_pic"
+                android:layout_width="207dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="centerCrop" />
+
+
+            <ImageView
+                android:layout_width="207dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/card_character_image_overlay" />
+
+
+            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/solid_red_button_background"
+                android:clickable="true"
+                android:padding="2dp"
+                app:corner2="8dp">
+
+                <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/shooting_ui_grid"
+                    android:padding="1dp"
+                    app:corner2="8dp">
+
+                    <ImageView
+                        android:id="@+id/profile_pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:id="@+id/target_name"
+                        style="@android:style/TextAppearance.DeviceDefault.Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="#AA000000"
+                        android:textSize="8sp" />
+                </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+
+        </FrameLayout>
+
+
+        <com.landsofruin.companion.view.CornerCuttingFrameLayout
+            android:id="@+id/use_pic"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_margin="8dp"
+            android:background="@drawable/solid_blue_button_background"
+            app:corner1="16dp"
+            app:corner2="16dp"
+            app:corner3="16dp"
+            app:corner4="16dp">
+
+            <com.landsofruin.companion.view.MechaFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Use this pic"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFFFF"
+                android:textSize="28sp" />
+
+        </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+    </FrameLayout>
+</ScrollView>

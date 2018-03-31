@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:endColor="#040c19"
+                android:gradientRadius="500"
+                android:startColor="#0e2956"
+                android:type="radial" />
+
+        </shape>
+    </item>
+    <item>
+        <bitmap
+
+            android:dither="true"
+            android:src="@drawable/command_panel_tile"
+            android:tileMode="repeat" />
+
+    </item>
+
+</layer-list>

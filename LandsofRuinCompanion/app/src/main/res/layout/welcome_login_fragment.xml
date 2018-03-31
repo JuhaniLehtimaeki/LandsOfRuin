@@ -1,0 +1,120 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/command_panel_background"
+    android:foreground="@drawable/command_panel_line">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <com.landsofruin.companion.view.HtmlTextView
+                android:id="@+id/welcome_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginRight="225dp"
+                android:text="@string/welcome_login_text"
+                android:textColor="#FFf0f0f0"
+                android:textSize="24sp" />
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/solid_yellow_button_background"
+                app:corner1="16dp"
+                app:corner2="16dp"
+                app:corner3="16dp"
+                app:corner4="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/google" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/facebook" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/twitter" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/email" />
+
+
+                    <com.landsofruin.companion.view.MechaFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:text="Login or signup"
+                        android:textAllCaps="true"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+
+
+            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/art_sniper_mirrored" />
+
+
+</FrameLayout>
+

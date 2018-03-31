@@ -1,0 +1,3 @@
+<resources>
+    <dimen name="setup_team_button_right_margin">480dp</dimen>
+</resources>

@@ -1,0 +1,4 @@
+Type- 0,Category-1,ID -2,group-ID-3,Name-4,Requires skills-5,Defensive modifier shooting -6,Defensive modifier CC -7,Defensive modifier zombies -8,Movement modifier -9,Movement modifier % -10,Offensive modifier -11,Attachable to gear IDs - 12,Required effect - 13,Noise modification % - 14,Weight -15,Camo modifier-16,GEAR value -17,maintanance GEAR value -18
+Accessory,Weapon bipod,7000,7000,Bipod,13,0,0,0,0,0,8,6,12,0,0.5,0,15,5
+Accessory,Weapon accessory,7001,7001,Silencer,10,0,0,0,0,0,0,"3,5",-1,-0.5,0.2,0,15,10
+Accessory,Sniper bipod,7002,7002,Bipod,13,0,0,0,0,0,8,22,12,0,0.5,0,15,5

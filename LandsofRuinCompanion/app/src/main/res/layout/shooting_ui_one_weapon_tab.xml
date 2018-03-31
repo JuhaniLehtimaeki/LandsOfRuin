@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.landsofruin.companion.view.CornerCuttingFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="60dp"
+    android:background="@drawable/solid_blue_button_background"
+    app:corner2="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:transformPivotX="100dp"
+        android:transformPivotY="80dp">
+
+
+        <ImageView
+            android:id="@+id/weapon_image"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <com.landsofruin.companion.view.MechaFontTextView
+            android:id="@+id/weapon_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+</com.landsofruin.companion.view.CornerCuttingFrameLayout>

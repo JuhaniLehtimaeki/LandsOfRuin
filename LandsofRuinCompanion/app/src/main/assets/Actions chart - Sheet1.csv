@@ -1,0 +1,26 @@
+ID -0,Action name -1,APs-2,Action description-3,Adds effect - self-4,Adds effect - friendly-5,Adds effect - enemy-6,Target effect - self-7,Target effect - friendly-8,Target effect - enemy-9,"Action type -10
+3 = only normal
+2 = confusion or normal
+1 = any mode","Uses consumable category-11 NOT USED, IGNORE THIS COLUMN",Removes effect self (different from target effect. This effect doesn't have to be in effect to perform an action) -12,blocks actions -13,"14 - Type:
+1: safe action (performed automatically)
+2: normal action",order - 15
+1,Aim NOT USED ANYMORE!,10,+3 attack modifier to all ranged attacks this turn,1,,,,,,3,,,,1,5000
+2,Shoot a ranged weapon,10,Perform a ranged attack.,,,,,,,2,,15,"15,19,20",2,11
+18,Aim and shoot a ranged weapon,20,Perform a ranged attack and aim.,,,,,,,3,,15,"15,19,20",2,12
+3,Fight in close combat,5,Perform a close combat attack.,,,,,,,2,,15,,2,13
+4,Take cover,5,Gain +1 to defensive rolls against ranged attacks.,2,,,,,,2,,,,2,4
+5,Pick up objective,5,"This relates to matches where there is a physical object of value and reasonable size that can be obtained by a model, or group of models, as the objective.",13,,,,,,3,,15,,2,20
+6,Deploy weapon,10,Deploy weapon's bipod. A deployed weapon has a 90 degree firing arc. Declare the character's facing when performing this action.,12,,,,,,3,,,,2,5
+7,Apply first-aid,10,Apply first-aid to a friendly character.,,,,,"5,10,99",,3,,15,,2,1
+10,Get up,5,Remove take cover effect and allow character to move again.,,,,2,,,1,,15,,2,50
+11,Undeploy weapon,5,Undeploy a deployed weapon and allow character to move again.,,,,12,,,1,,15,,2,6
+12,Drop objective,5,Drop objective.,,,,13,,,1,,15,,2,10
+13,Realign weapon,5,Change a deployed weapon's firing arc.,12,,,12,,,3,,,,2,7
+14,Scavenge,15,Scavenge a map section.,,,,,,,3,,15,,2,21
+15,Throw,5,"Throw a grenade or a molotov. Frag grenade range: 15"", molotov range: 7""",,,,,,,3,Grenade,15,"2,18,19,20",2,2
+16,Put out fire,5,Character rolls on ground to put the fire out,,,,14,,,1,,15,,2,1
+17,Reveal,0,Character is revelead and can move and perform actions normally.,,,,15,,,1,,,,2,1
+1001,Flee,20,Flee,16,,,,,,1,,15,,1,16
+19,Force Frenzy,5,Inject combat drugs to induce frenzy to a friendly character in base-to-base contact. Combat drugs will immediately remove any suppression and make the target immune to suppression. The target has a chance of being wounded every turn after being inhjected.,,17,,,,,3,,15,"15,18,2,3",2,1
+20,Execute Slave,15,"Blow up one of your slaves. The slave is pushed to any direction up to 10"" and then explodes.",,,,,,,3,Minion,15,"2,18,19,15",2,1
+21,Call in artillery strike,20,Call in artillery strike to a map section. The strike will arrive 3 Environment phases later and hit every character in the designated map section.,,,,,,,3,Artillery,15,"2,18,19,15",2,1

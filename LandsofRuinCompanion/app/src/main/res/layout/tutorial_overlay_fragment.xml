@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/command_panel_background"
+    android:foreground="@drawable/command_panel_line"
+    android:visibility="gone">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <com.landsofruin.companion.view.MechaFontTextView
+                android:id="@+id/tutorial_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:ellipsize="end"
+                android:text="Help"
+                android:textAllCaps="true"
+                android:textColor="@color/text_light_blue"
+                android:textSize="24sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#037790" />
+
+
+            <LinearLayout
+                android:id="@+id/content_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <com.landsofruin.companion.view.CornerCuttingFrameLayout
+        android:id="@+id/ok_tutorial_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right|top"
+        android:layout_margin="8dp"
+        android:background="@drawable/solid_blue_button_background"
+        android:padding="8dp"
+        app:corner1="8dp"
+        app:corner2="8dp"
+        app:corner3="8dp"
+        app:corner4="8dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/close_button_blue" />
+
+    </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+</FrameLayout>
+

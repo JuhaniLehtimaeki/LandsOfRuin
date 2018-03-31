@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.landsofruin.companion.tribemanagement.YourTribeActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/battle_art" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/battle_overlay" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <com.landsofruin.companion.view.MechaFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Welcome to Lands of Ruin, please give us a screen name you want to use with your account. This is the name others see you when you join a game."
+                android:textAllCaps="true"
+                android:textColor="#FFFFFFFF"
+                android:textSize="24sp" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="32dp">
+
+                <EditText
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Screen name"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="24sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <com.landsofruin.companion.view.MechaFontTextView
+                android:id="@+id/non_admin_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="32dp"
+                android:background="@drawable/info_container_background"
+                android:gravity="center_vertical"
+                android:paddingBottom="16dp"
+                android:paddingLeft="66dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:text="You can change your screen name later"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                android:id="@+id/complete_account_save_button"
+                android:layout_width="300dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:background="@drawable/solid_yellow_button_background"
+                app:corner1="16dp"
+                app:corner2="16dp"
+                app:corner3="16dp"
+                app:corner4="16dp">
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:id="@+id/spawn_unlock_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Save"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="28sp" />
+
+            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

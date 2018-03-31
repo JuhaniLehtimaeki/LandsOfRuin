@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="200dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/card_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="64dp" />
+
+
+
+
+            <com.landsofruin.companion.view.MechaFontTextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:ellipsize="end"
+                android:text="Squads"
+                android:textAllCaps="true"
+                android:textColor="@color/text_light_blue"
+                android:textSize="16sp" />
+
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="#037790" />
+
+            <LinearLayout
+                android:id="@+id/squads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+
+
+
+            <com.landsofruin.companion.view.MechaFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:ellipsize="end"
+                android:text="Weapons"
+                android:textAllCaps="true"
+                android:textColor="@color/text_light_blue"
+                android:textSize="16sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="#037790" />
+
+            <LinearLayout
+                android:id="@+id/weapons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+
+            <com.landsofruin.companion.view.MechaFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:ellipsize="end"
+                android:text="Gear"
+                android:textAllCaps="true"
+                android:textColor="@color/text_light_blue"
+                android:textSize="16sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="#037790" />
+
+            <LinearLayout
+                android:id="@+id/gear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+
+            <com.landsofruin.companion.view.MechaFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:ellipsize="end"
+                android:text="Skills"
+                android:textAllCaps="true"
+                android:textColor="@color/text_light_blue"
+                android:textSize="16sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="#037790" />
+
+            <LinearLayout
+                android:id="@+id/skills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/command_panel_top_gradient" />
+
+    <com.landsofruin.companion.view.CornerCuttingFrameLayout
+        android:id="@+id/add_remove_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/solid_yellow_button_background"
+        app:corner1="16dp"
+        app:corner2="16dp"
+        app:corner3="16dp"
+        app:corner4="16dp">
+
+        <com.landsofruin.companion.view.MechaFontTextView
+            android:id="@+id/button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="add - remove"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFFFF"
+            android:textSize="28sp" />
+
+    </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+
+</FrameLayout>

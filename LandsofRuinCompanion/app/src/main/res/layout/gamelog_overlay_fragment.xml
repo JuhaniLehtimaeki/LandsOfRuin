@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.landsofruin.companion.view.ClipedCommandPanelFrameLayout
+        android:id="@+id/logs_container_background"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/log_panel_background"
+        android:clickable="true"
+        android:foreground="@drawable/command_panel_line"
+        android:minHeight="60dp">
+
+
+    </com.landsofruin.companion.view.ClipedCommandPanelFrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/logs_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="105dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp" />
+
+    <com.landsofruin.companion.view.ClipedCommandPanelFrameLayout
+        android:id="@+id/expanded_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/log_panel_background"
+        android:clickable="true"
+        android:foreground="@drawable/command_panel_line"
+        android:transformPivotY="0dp"
+        android:visibility="gone">
+
+
+        <com.landsofruin.companion.view.CornerCuttingFrameLayout
+            android:id="@+id/close_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|top"
+            android:layout_margin="8dp"
+            android:background="@drawable/solid_blue_button_background"
+            android:padding="8dp"
+            app:corner1="8dp"
+            app:corner2="8dp"
+            app:corner3="8dp"
+            app:corner4="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/close_button_blue" />
+
+        </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+
+        <ListView
+            android:id="@+id/expanded_logs_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="48dp"
+            android:divider="@color/light_blue_button_bg"
+            android:dividerHeight="2dp"
+            android:orientation="vertical" />
+
+
+    </com.landsofruin.companion.view.ClipedCommandPanelFrameLayout>
+
+</FrameLayout>

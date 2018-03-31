@@ -1,0 +1,6 @@
+ID,Name,Description,Enables actions,Modifier offensive,Modifier defensive,Unlocks skills,Requires equipment type,Requires equipment category,Requires equipment id,Max count,LD modifier,Adds a default effect -12,GEAR value -13
+1000,Basic weapons,Required for basic weapons,,,,,,,,1,0,,10
+1001,Heavy weapons,Required for heavy weapons,,,,13,,,,1,0,,30
+1002,Basic CC weapons,Required for basic CC weapons,,,,,,,,1,0,,10
+1003,Advanced CC Weapons,Required for advanced CC weapons,,,,,,,,1,0,,30
+1004,Sniper rifles,Required for sniper rifles,,,,13,,,,1,0,,30

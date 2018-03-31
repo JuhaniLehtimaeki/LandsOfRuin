@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/overlay_not_ready"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#99000000">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:maxWidth="500dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Game not ready. Waiting for opponent..."
+            android:textSize="32sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="500dp"
+            android:layout_margin="16dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="left"
+            android:text="Connection to your opponent is lost. Please check that your WIFI connection is working. If this problem persists both players should exit the game and the hosting player can re-host the game from the lobby screen."
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

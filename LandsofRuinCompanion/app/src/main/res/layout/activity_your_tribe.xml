@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/toolbar_background"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/save_button"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/clickable_transparent_background"
+            android:src="@drawable/back_arrow" />
+
+
+        <com.landsofruin.companion.view.MechaFontTextView
+            android:id="@+id/info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:text="Your Tribe"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp" />
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/battle_art" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/battle_overlay" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <com.landsofruin.companion.view.MechaFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="16dp"
+                            android:ellipsize="end"
+                            android:text="Tribe info"
+                            android:textAllCaps="true"
+                            android:textColor="@color/text_light_blue"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#037790" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
+                            <EditText
+                                android:id="@+id/user_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Screen name" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
+                            <EditText
+                                android:id="@+id/tribe_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Tribe name" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Select one:"
+                                    android:textColor="#FFFFFFFF"
+                                    android:textSize="24sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginBottom="8dp"
+                                    android:text="(custom icons support coming later)"
+                                    android:textColor="#FFFFFFFF"
+                                    android:textSize="10sp" />
+
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:id="@+id/reclaimers_icon"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginLeft="16dp"
+                                android:background="@drawable/clickable_transparent_background"
+                                android:padding="8dp" />
+
+
+                            <ImageView
+                                android:id="@+id/baleans_icon"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="@drawable/clickable_transparent_background"
+                                android:padding="8dp" />
+                        </LinearLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:visibility="gone">
+
+                            <EditText
+                                android:id="@+id/small_icon_url"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Small Icon" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:visibility="gone">
+
+                            <EditText
+                                android:id="@+id/large_icon_url"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Large Icon" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.landsofruin.companion.view.MechaFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="16dp"
+                            android:ellipsize="end"
+                            android:text="Your battles"
+                            android:textAllCaps="true"
+                            android:textColor="@color/text_light_blue"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#037790" />
+
+
+                        <com.landsofruin.companion.view.MechaFontTextView
+                            android:id="@+id/past_battles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:textAllCaps="true"
+                            android:textColor="#FFFFFFFF"
+                            android:textSize="18sp" />
+
+
+                        <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                            android:id="@+id/completed_games"
+                            android:layout_width="300dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/solid_blue_button_background"
+                            android:visibility="gone"
+                            app:corner1="16dp"
+                            app:corner2="16dp"
+                            app:corner3="16dp"
+                            app:corner4="16dp">
+
+                            <com.landsofruin.companion.view.MechaFontTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="View battle history"
+                                android:textAllCaps="true"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="28sp" />
+
+                        </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <com.landsofruin.companion.view.MechaFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:ellipsize="end"
+                        android:text="Characters in your tribe"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_light_blue"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#037790" />
+
+
+                <org.apmem.tools.layouts.FlowLayout
+                    android:id="@+id/characters_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="100dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="40dp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+</LinearLayout>

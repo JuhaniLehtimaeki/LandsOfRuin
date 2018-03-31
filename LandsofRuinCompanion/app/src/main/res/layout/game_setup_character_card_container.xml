@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLevelLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingBottom="24dp"
+    >
+
+    <FrameLayout
+        android:layout_gravity="top|left"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        android:id="@+id/fragment_container_1"
+        android:layout_width="@dimen/friendly_card_width"
+        android:layout_height="@dimen/friendly_card_height"/>
+
+
+    <FrameLayout
+        android:layout_gravity="top|right"
+        android:transformPivotX="@dimen/friendly_card_width"
+        android:transformPivotY="0dp"
+        android:id="@+id/fragment_container_2"
+        android:layout_width="@dimen/friendly_card_width"
+        android:layout_height="@dimen/friendly_card_height"/>
+
+    <FrameLayout
+        android:layout_gravity="top|left"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        android:id="@+id/fragment_container_3"
+        android:layout_width="@dimen/friendly_card_width"
+        android:layout_height="@dimen/friendly_card_height"/>
+
+
+    <FrameLayout
+        android:layout_gravity="top|right"
+        android:transformPivotX="@dimen/friendly_card_width"
+        android:transformPivotY="0dp"
+        android:id="@+id/fragment_container_4"
+        android:layout_width="@dimen/friendly_card_width"
+        android:layout_height="@dimen/friendly_card_height"/>
+
+
+</FrameLayout>

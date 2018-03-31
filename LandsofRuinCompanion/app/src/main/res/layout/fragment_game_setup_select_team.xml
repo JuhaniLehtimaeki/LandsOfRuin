@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+
+    <FrameLayout
+        android:id="@+id/character_selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:background="#061333" />
+
+
+            <com.landsofruin.companion.view.MechaFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1b2e3e"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="4dp"
+                android:paddingTop="8dp"
+                android:text="Select your team"
+                android:textAllCaps="true"
+                android:textColor="@color/text_light_blue"
+                android:textSize="18sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_gravity="bottom"
+                android:background="#037790" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="28dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+
+                    <ImageView
+                        android:id="@+id/tribe_icon"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:scaleType="centerCrop" />
+
+
+                    <TextView
+                        android:id="@+id/tribe_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="24sp" />
+
+
+                    <TextView
+                        android:id="@+id/gear_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="16dp"
+                        android:drawableLeft="@drawable/gear_icon_2"
+                        android:drawablePadding="8dp"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="24sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+                    <com.viewpagerindicator.CirclePageIndicator
+                        android:id="@+id/pager_indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:paddingBottom="40dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="16dp" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/friendly_card_layout_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:paddingBottom="24dp"
+                android:paddingTop="28dp">
+
+                <ScrollView
+                    android:id="@+id/characters_scroll"
+                    android:layout_width="@dimen/friendly_card_layout_width"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:clipToPadding="false"
+                    android:layout_marginTop="16dp"
+                    android:fillViewport="true"
+                    android:nestedScrollingEnabled="true">
+
+                    <LinearLayout
+                        android:id="@+id/cards_friendly"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                    </LinearLayout>
+
+
+                </ScrollView>
+
+
+                <TextView
+                    android:id="@+id/scenario_validation_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="24sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+
+            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                android:id="@+id/back_button"
+                android:layout_width="240dp"
+                android:layout_height="80dp"
+                android:layout_margin="24dp"
+                android:background="@drawable/solid_blue_button_background"
+                app:corner1="40dp"
+                app:corner4="40dp">
+
+                <com.landsofruin.companion.view.MechaFontTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="24dp"
+                    android:text="Back"
+                    android:textColor="@color/light_blue"
+                    android:textSize="24sp" />
+
+            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+
+            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                android:id="@+id/done_button"
+                android:layout_width="240dp"
+                android:layout_height="80dp"
+                android:layout_margin="24dp"
+                android:background="@drawable/solid_yellow_button_background"
+                android:enabled="false"
+                app:corner2="40dp"
+                app:corner3="40dp">
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="24dp"
+                    android:text="Ready"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="24sp" />
+
+            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/tribe_selection_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:background="#061333" />
+
+
+        <com.landsofruin.companion.view.MechaFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1b2e3e"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="4dp"
+            android:paddingTop="8dp"
+            android:text="Select your team"
+            android:textAllCaps="true"
+            android:textColor="@color/text_light_blue"
+            android:textSize="18sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_gravity="bottom"
+            android:background="#037790" />
+
+
+        <com.landsofruin.companion.view.MechaFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="24dp"
+            android:text="Available tribes"
+            android:textSize="16sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="#037790" />
+
+        <LinearLayout
+            android:id="@+id/tribes_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+
+            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                android:id="@+id/tribe_back_button"
+                android:layout_width="240dp"
+                android:layout_height="80dp"
+                android:layout_margin="24dp"
+                android:background="@drawable/solid_blue_button_background"
+                app:corner1="40dp"
+                app:corner4="40dp">
+
+                <com.landsofruin.companion.view.MechaFontTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="24dp"
+                    android:text="Back"
+                    android:textColor="@color/light_blue"
+                    android:textSize="24sp" />
+
+            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/change_picture_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/command_panel_background"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="50dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bottom_buttons"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+
+                <ScrollView
+                    android:layout_width="420dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <FrameLayout
+                                android:id="@+id/pic_character_fragment_container"
+                                android:layout_width="420dp"
+                                android:layout_height="wrap_content" />
+
+
+                            <ImageView
+                                android:id="@+id/pic_profile"
+                                android:layout_width="175dp"
+                                android:layout_height="175dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="40dp"
+                                android:layout_marginLeft="100dp"
+                                android:background="#FF000000"
+                                android:padding="2dp" />
+
+                        </FrameLayout>
+
+                        <Button
+                            android:id="@+id/gallery_picture_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/selector_action_button"
+                            android:text="Load from gallery" />
+
+                        <Button
+                            android:id="@+id/take_pic_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/selector_action_button"
+                            android:text="Take new picture" />
+                    </LinearLayout>
+
+                </ScrollView>
+
+                <ScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:text="Or select an image to use"
+                            android:textColor="#FFFFFFFF"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/empty_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:text="-no images yet-"
+                            android:textSize="24sp" />
+
+                        <LinearLayout
+                            android:id="@+id/miniatures_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical" />
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/bottom_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancel_picture_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_action_button"
+                    android:text="Cancel" />
+
+
+                <Button
+                    android:id="@+id/ok_picture_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_action_button"
+                    android:text="OK"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/crop_picture_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF333333"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gray_grid"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="50dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="Card pic"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="Profile pic"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.edmodo.cropper.CropImageView
+
+                    android:id="@+id/card_view_cropper"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1" />
+
+                <com.edmodo.cropper.second.CropImageView
+
+                    android:id="@+id/profile_view_cropper"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancel_crop_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="24dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_action_button"
+                    android:text="Cancel" />
+
+
+                <Button
+                    android:id="@+id/ok_crop_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="24dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_action_button"
+                    android:text="OK" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/uploading_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#aa000000"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/upload_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Uploading image to server - Please wait..."
+                android:textColor="#FFFFFFFF"
+                android:textSize="24sp" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

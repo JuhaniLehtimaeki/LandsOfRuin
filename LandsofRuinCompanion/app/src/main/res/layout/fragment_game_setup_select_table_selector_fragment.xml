@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:id="@+id/main_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:id="@+id/map_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/map_container"
+            android:layout_alignLeft="@+id/map_container"
+            android:layout_alignRight="@+id/map_container"
+            android:layout_alignTop="@+id/map_container"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/map_background"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:scaleType="fitXY" />
+
+
+        <FrameLayout
+            android:id="@+id/map_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <com.landsofruin.companion.map.MapView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+
+        <com.landsofruin.companion.view.MechaFontTextView
+            android:id="@+id/table_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:gravity="center_horizontal"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFFFF"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/provider_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:gravity="center_horizontal"
+            android:textColor="#FFFFFFFF"
+            android:textSize="24sp" />
+
+
+        <ImageView
+            android:id="@+id/provider_icon"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:gravity="center_horizontal"
+            android:scaleType="fitCenter" />
+
+
+        <TextView
+            android:id="@+id/provider_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:background="@drawable/clickable_transparent_background"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:textColor="#FF2196f3"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</LinearLayout>

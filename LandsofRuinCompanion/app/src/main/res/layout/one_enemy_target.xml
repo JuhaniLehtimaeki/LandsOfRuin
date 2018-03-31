@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="215.5dp"
+    android:layout_height="310dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/enemy_card_background_with_header"
+    android:clickable="true"
+    android:padding="2dp">
+
+    <ImageView
+        android:id="@+id/enemy_portrait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="36dp"
+        android:scaleType="centerCrop" />
+
+
+    <com.landsofruin.companion.view.MechaFontTextView
+        android:id="@+id/target_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:textAllCaps="true"
+        android:textColor="#FF000000"
+        android:textSize="12sp" />
+</FrameLayout>

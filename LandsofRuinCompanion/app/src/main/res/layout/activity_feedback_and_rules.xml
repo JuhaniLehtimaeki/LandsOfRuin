@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lobby_bg_gray_gradient">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/landing_page_bottom" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/barbwire_bottom" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/diamond_plate" />
+
+
+    <ImageView
+        android:id="@+id/lor_text_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/lor_dropshadow" />
+
+    <ImageView
+        android:id="@+id/lor_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/lands_of_ruin" />
+
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+
+    </View>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="60dp"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="100dp"
+            android:paddingLeft="110dp"
+            android:paddingRight="110dp"
+            android:paddingTop="80dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <com.landsofruin.companion.view.HtmlTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/contact_text"
+                    android:textColor="#FFf0f0f0"
+                    android:textSize="24sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/gplus_community"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/clickable_transparent_background"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:text="Google+ Community for discussion and support"
+                    android:textColor="#FF2196f3"
+                    android:textSize="24sp" />
+
+
+                <TextView
+                    android:id="@+id/facebook_community"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/clickable_transparent_background"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:text="Facebook Group for discussion and support"
+                    android:textColor="#FF2196f3"
+                    android:textSize="24sp" />
+
+
+                <TextView
+                    android:id="@+id/feedbackform"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/clickable_transparent_background"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:text="feedback form"
+                    android:textColor="#FF2196f3"
+                    android:textSize="24sp" />
+
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/clickable_transparent_background"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:text="email us directly to info@landsofruin.com"
+                    android:textColor="#FF2196f3"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/fb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/clickable_transparent_background"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:text="follow us on Facebook"
+                    android:textColor="#FF2196f3"
+                    android:textSize="24sp" />
+
+
+                <TextView
+                    android:id="@+id/twitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/clickable_transparent_background"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:text="follow us on Twitter"
+                    android:textColor="#FF2196f3"
+                    android:textSize="24sp" />
+
+
+                <TextView
+                    android:id="@+id/gplus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/clickable_transparent_background"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:text="follow us on Google+"
+                    android:textColor="#FF2196f3"
+                    android:textSize="24sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/barbwire_top" />
+
+
+    <TextView
+        android:id="@+id/version_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:background="#66000000"
+        android:padding="3dp" />
+
+    <include layout="@layout/overlay_connecting" />
+</RelativeLayout>
+
+
+

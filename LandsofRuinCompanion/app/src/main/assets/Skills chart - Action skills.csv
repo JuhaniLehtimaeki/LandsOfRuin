@@ -1,0 +1,12 @@
+ID - 0,Name - 1,Description - 2,Enables actions - 3,Modifier offensive - 4,Modifier defensive - 5,Unlocks skills - 6,Requires equipment type - 7,Requires equipment category - 8,Requires equipment id - 9,Max count-10,LD modifier - 11,Adds a default effect pre-game -12,GEAR value -13
+1,Shooting,Enables shooting actions,"2,18",,,"2000,1000,1001,2013",,,,1,0,,100
+8,Basic first-aid,Enables first aid action,7,,,,,,,1,0,,150
+10,Human basic skills,Basic actions,"5,3,12,16",,,"1,4,8,9,12,2015,2016,14,15",,,,1,0,,10
+12,Close combat training,unlocks CC weapon skills,,,,"1002,1003,2014",,,,1,0,,80
+13,Bipod,Enables deply heavy weapon bipod,"6,11,13",,,,,Weapon bipod,7000,1,0,,20
+14,Grenade throwing,Enable use of grenades,15,,,,,Grenade,,1,0,,50
+15,Infiltrate,Allows character to hide,17,,,,,,,1,0,15,200
+16,Sniper Bipod,Enables sniper bipod,"6,11,13",,,,,Sniper bipod,7002,1,0,,20
+17,Balean Pusher,"Balean ""medic""",19,,,,,,,1,0,,200
+18,Balean Slaver,Slave driver,20,,,,,Minion,,1,0,,500
+19,Artillery Target,Allows calling airstrikes,21,,,,,Artillery,,1,0,,300

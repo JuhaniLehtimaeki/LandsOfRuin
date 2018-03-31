@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.landsofruin.companion.tribemanagement.YourTribeActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/battle_art" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/battle_overlay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:context="com.landsofruin.companion.tribemanagement.AddPictureActivity">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#AA000000">
+
+
+            <FrameLayout
+                android:layout_width="@dimen/friendly_card_width"
+                android:layout_height="@dimen/friendly_card_height"
+                android:layout_gravity="center"
+                android:background="@drawable/card_background_horizontal">
+
+                <com.lyft.android.scissors.CropView
+                    android:id="@+id/crop_view_card"
+                    android:layout_width="207dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:scaleType="centerCrop" />
+
+
+                <ImageView
+                    android:layout_width="207dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/card_character_image_overlay" />
+
+            </FrameLayout>
+
+
+            <com.landsofruin.companion.view.MechaFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:text="Card image"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFFFF"
+                android:textSize="28sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#AA000000">
+
+
+            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                android:layout_width="172dp"
+                android:layout_height="172dp"
+                android:layout_gravity="center"
+                android:background="@drawable/solid_red_button_background"
+                android:clickable="true"
+                android:padding="5dp"
+                app:corner2="18dp">
+
+                <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/shooting_ui_grid"
+                    android:padding="2dp"
+                    app:corner2="18dp">
+
+                    <com.lyft.android.scissors.CropView
+                        android:id="@+id/crop_view_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerInside" />
+
+                </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+
+            <com.landsofruin.companion.view.MechaFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:text="Portrait image"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFFFF"
+                android:textSize="28sp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal">
+
+
+        <com.landsofruin.companion.view.CornerCuttingFrameLayout
+            android:id="@+id/cancel_button"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/solid_yellow_button_background"
+            app:corner1="16dp"
+            app:corner2="16dp"
+            app:corner3="16dp"
+            app:corner4="16dp">
+
+            <com.landsofruin.companion.view.MechaFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Cancel"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFFFF"
+                android:textSize="28sp" />
+
+        </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+        <com.landsofruin.companion.view.CornerCuttingFrameLayout
+            android:id="@+id/done_button"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/solid_blue_button_background"
+            app:corner1="16dp"
+            app:corner2="16dp"
+            app:corner3="16dp"
+            app:corner4="16dp">
+
+            <com.landsofruin.companion.view.MechaFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Done! - upload"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFFFF"
+                android:textSize="28sp" />
+
+        </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/uploading_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AA000000"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <com.landsofruin.companion.view.MechaFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="200dp"
+            android:text="Uploading ..."
+            android:textAllCaps="true"
+            android:textColor="#FFFFFFFF"
+            android:textSize="32sp" />
+
+
+        <ProgressBar
+            android:id="@+id/marker_progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+
+    </FrameLayout>
+
+</FrameLayout>

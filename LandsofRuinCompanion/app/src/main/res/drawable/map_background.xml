@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:dither="true"
+            android:src="@drawable/mapbackground"
+            android:tileMode="repeat" />
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:centerColor="#60011727"
+                android:endColor="#6001423e"
+                android:startColor="#6001423e"
+                android:type="linear" />
+        </shape>
+    </item>
+</layer-list>

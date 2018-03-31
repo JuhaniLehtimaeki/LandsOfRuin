@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.landsofruin.companion.tribemanagement.YourTribeActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/battle_art" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/battle_overlay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <com.landsofruin.companion.view.MechaFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="24dp"
+                android:ellipsize="end"
+                android:text="Current Picture"
+                android:textAllCaps="true"
+                android:textColor="@color/text_light_blue"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#037790" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="#AA000000" />
+
+
+                <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                    android:id="@+id/reset_to_default_button"
+                    android:layout_width="350dp"
+                    android:visibility="gone"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_height="70dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/solid_blue_button_background"
+                    app:corner1="16dp"
+                    app:corner2="16dp"
+                    app:corner3="16dp"
+                    app:corner4="16dp">
+
+                    <com.landsofruin.companion.view.MechaFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="reset to default"
+                        android:textAllCaps="true"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="28sp" />
+
+                </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.landsofruin.companion.view.MechaFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="24dp"
+                android:ellipsize="end"
+                android:text="Available Pictures"
+                android:textAllCaps="true"
+                android:textColor="@color/text_light_blue"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#037790" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#AA000000" />
+
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/pager_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_margin="8dp" />
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal">
+
+
+                <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                    android:id="@+id/add_pic_gallery"
+                    android:layout_width="350dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/solid_blue_button_background"
+                    app:corner1="16dp"
+                    app:corner2="16dp"
+                    app:corner3="16dp"
+                    app:corner4="16dp">
+
+                    <com.landsofruin.companion.view.MechaFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Add Picture from Gallery"
+                        android:textAllCaps="true"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="28sp" />
+
+                </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+                <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                    android:id="@+id/add_pic_camera"
+                    android:layout_width="350dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/solid_blue_button_background"
+                    app:corner1="16dp"
+                    app:corner2="16dp"
+                    app:corner3="16dp"
+                    app:corner4="16dp">
+
+                    <com.landsofruin.companion.view.MechaFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Add Picture from Camera"
+                        android:textAllCaps="true"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="28sp" />
+
+                </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

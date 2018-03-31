@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="206.5dp"
+        android:layout_height="209dp"
+        android:background="@drawable/your_card_background">
+
+        <ImageView
+            android:id="@+id/portrait"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="-60dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="36dp"
+            android:scaleType="centerCrop" />
+
+
+        <com.landsofruin.companion.view.MechaFontTextView
+            android:id="@+id/target_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Target"
+            android:textColor="#FFFFFFFF" />
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/explanations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="1dp"
+        android:background="#03778f"
+        android:minHeight="120dp"
+        android:orientation="vertical"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="1dp"
+        android:background="#03778f"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+
+        <ImageView
+            android:id="@+id/weapon_image"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <com.landsofruin.companion.view.MechaFontTextView
+            android:id="@+id/weapon_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="4dp"
+            android:gravity="center_horizontal"
+            android:textAllCaps="true" />
+    </LinearLayout>
+
+</LinearLayout>

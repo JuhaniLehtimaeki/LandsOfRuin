@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.landsofruin.companion.ruleobjectsui.CharacterTypesActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/battle_art" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/battle_overlay" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/add_new"
+        android:layout_margin="80dp"
+        android:scrollbars="vertical" />
+
+
+    <com.landsofruin.companion.view.CornerCuttingFrameLayout
+        android:id="@+id/add_new"
+        android:layout_width="600dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/solid_yellow_button_background"
+        app:corner1="16dp"
+        app:corner2="16dp"
+        app:corner3="16dp"
+        app:corner4="16dp">
+
+        <com.landsofruin.companion.view.MechaFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add new"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFFFF"
+            android:textSize="28sp" />
+
+
+    </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+</RelativeLayout>

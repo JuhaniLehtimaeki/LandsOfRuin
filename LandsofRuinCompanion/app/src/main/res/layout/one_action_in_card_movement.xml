@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.landsofruin.companion.view.MechaFontTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginRight="16dp"
+    android:gravity="center"
+    android:textColor="#FFFFFFFF"
+    android:textSize="19sp"
+    android:textStyle="bold" />

@@ -1,0 +1,530 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:background="@color/bg_colour_3"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="@dimen/friendly_card_layout_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="8dp">
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:id="@+id/phase_title_text"
+                    style="@style/setup_toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="4dp" />
+
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:id="@+id/phase_sub_title_text"
+                    style="@style/setup_toolbar_sub_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="4dp" />
+
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/info_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/clickable_transparent_background"
+                android:clickable="true"
+                android:padding="8dp"
+                android:src="@drawable/ic_info_bubble"
+                android:tint="#FFFFFFFF" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                android:id="@+id/next_button"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:background="@drawable/solid_yellow_button_background"
+                android:enabled="false"
+                app:corner2="26dp"
+                app:corner3="26dp">
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:id="@+id/next_button_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="24dp"
+                    android:text="Next phase"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="24sp" />
+
+            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/bg_colour_2"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <com.landsofruin.companion.view.DiagonalBgView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/scenario_panel_top_gradient" />
+
+
+            <LinearLayout
+                android:id="@+id/morale_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/cards_friendly"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/clickable_transparent_background"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Morale:"
+                    android:textColor="#FFFFFFFF" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp">
+
+                        <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#274359"
+                            android:paddingBottom="3dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="3dp"
+                            app:corner1="28dp"
+                            app:corner3="28dp">
+
+                            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#1B2E3E"
+                                app:corner1="14dp"
+                                app:corner3="14dp" />
+
+
+                            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                                android:id="@+id/morale_progress_bar_white"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#FFFFFFFF"
+                                android:transformPivotX="0dp"
+                                app:corner1="14dp"
+                                app:corner3="14dp" />
+
+                            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                                android:id="@+id/morale_progress_bar_orange"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#FF7E00"
+                                android:transformPivotX="0dp"
+                                app:corner1="14dp"
+                                app:corner3="14dp" />
+
+
+                        </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+                        <com.landsofruin.companion.view.MechaFontTextView
+                            android:id="@+id/team_morale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textAllCaps="true"
+                            android:textColor="#FFFFFFFF"
+                            android:textSize="10dp" />
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:layout_marginBottom="4dp">
+
+                        <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#274359"
+                            android:paddingBottom="3dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="3dp"
+                            app:corner1="28dp"
+                            app:corner3="28dp">
+
+                            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#1B2E3E"
+                                app:corner1="14dp"
+                                app:corner3="14dp" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+
+                                <FrameLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+
+                                    android:layout_weight="1">
+
+                                    <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                                        android:id="@+id/turn_morale_negative_white"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="#FFFFFFFF" />
+
+                                    <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                                        android:id="@+id/turn_morale_negative"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="#B71C1C" />
+
+                                </FrameLayout>
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#274359" />
+
+                                <FrameLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+
+                                    <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                                        android:id="@+id/turn_morale_positive_white"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="#FFFFFFFF"
+                                        android:transformPivotX="0dp"
+
+                                        app:corner3="14dp" />
+
+                                    <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                                        android:id="@+id/turn_morale_positive"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="#FF7E00"
+                                        android:transformPivotX="0dp"
+
+                                        app:corner3="14dp" />
+
+                                </FrameLayout>
+                            </LinearLayout>
+
+                        </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_toLeftOf="@+id/menu_container"
+                android:layout_toRightOf="@id/morale_container">
+
+                <fragment
+                    android:id="@+id/game_indicator"
+                    android:name="com.landsofruin.companion.indicator.GameIndicatorFragment"
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="left" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/map_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="70dp"
+                android:paddingLeft="450dp"
+                android:paddingRight="8dp"
+                android:paddingTop="80dp">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.landsofruin.companion.map.MapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+
+            <fragment
+                android:id="@+id/planning_overlay"
+                android:name="com.landsofruin.companion.fragment.ActionsPlanningOverlayFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/menu_container"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="450dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp" />
+
+
+            <fragment
+                android:id="@+id/planning_overlay_team_shortcuts"
+                android:name="com.landsofruin.companion.fragment.ActionsPlanningOverlayTeamShortcutsFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/menu_container"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="450dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp" />
+
+
+            <fragment
+                android:id="@+id/actions_overlay"
+                android:name="com.landsofruin.companion.fragment.ActionsPerformOverlayFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/menu_container"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="450dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp" />
+
+
+            <fragment
+                android:id="@+id/zombie_overlay"
+                android:name="com.landsofruin.companion.fragment.ZombiePhaseOverlayFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/menu_container"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="450dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp" />
+
+            <com.landsofruin.companion.cards.CardOverlayViewsLayout
+                android:id="@+id/cards_friendly"
+                android:layout_width="@dimen/friendly_card_layout_width"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal" />
+
+
+            <com.landsofruin.companion.cards.EnemyCardOverlayLayout
+                android:id="@+id/cards_enemy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="horizontal" />
+
+            <FrameLayout
+                android:id="@+id/throw_ui_container"
+                android:layout_width="450dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:clickable="true"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/menu_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true">
+
+                <View
+                    android:id="@+id/enemy_cards_stack_click_stealer"
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/button_enemies"
+                    android:foreground="@drawable/clickable_transparent_background" />
+
+                <View
+                    android:id="@+id/intel_button"
+                    android:layout_width="40dp"
+                    android:visibility="gone"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/button_intel"
+                    android:foreground="@drawable/clickable_transparent_background" />
+
+
+                <View
+                    android:id="@+id/menu_button"
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/button_menu"
+                    android:foreground="@drawable/clickable_transparent_background" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/gamelog_overlay"
+        android:name="com.landsofruin.companion.fragment.GameLogOverlayFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="450dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="@dimen/toolbar_height" />
+
+    <include layout="@layout/info_text_overlay" />
+
+    <fragment
+        android:id="@+id/intel_overlay"
+        android:name="com.landsofruin.companion.fragment.IntelOverlayFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/scenario_overlay"
+        android:name="com.landsofruin.companion.fragment.ScenarioOverlayFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/phase_change_undo_confirmation"
+        android:name="com.landsofruin.companion.fragment.UndoConfirmationOverlayFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <fragment
+        android:id="@+id/end_game_confirmation"
+        android:name="com.landsofruin.companion.fragment.EndGameConfirmationOverlayFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <fragment
+        android:id="@+id/end_game_preparation"
+        android:name="com.landsofruin.companion.fragment.EndGamePreparationOverlayFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <fragment
+        android:id="@+id/new_event_animation_fragment"
+        android:name="com.landsofruin.companion.fragment.NewEffectAnimationOverlayFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <FrameLayout
+        android:id="@+id/attack_ui_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <fragment
+        android:id="@+id/tutorial_fragment"
+        android:name="com.landsofruin.companion.fragment.TutorialOverlayFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <include layout="@layout/overlay_game_not_ready" />
+
+
+    <include layout="@layout/overlay_game_waiting_for_opponent" />
+
+
+    <include layout="@layout/overlay_zombie_phase_skipped" />
+
+    <FrameLayout
+        android:id="@+id/game_ended"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+    <TextView
+        style="@style/early_access_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="4dp"
+        android:visibility="gone"
+        android:text="@string/early_access_text" />
+
+</FrameLayout>

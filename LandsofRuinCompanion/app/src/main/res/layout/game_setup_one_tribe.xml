@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/clickable_transparent_background"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/tribe_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:background="#3500eaff"
+        android:padding="8dp"
+        android:scaleType="centerCrop" />
+
+    <com.landsofruin.companion.view.MechaFontTextView
+        android:id="@+id/tribe_name"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="4dp"
+        android:background="#3500eaff"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp" />
+
+
+</LinearLayout>

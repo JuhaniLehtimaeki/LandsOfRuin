@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/battle_art" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/battle_overlay" />
+
+
+    <fragment
+        android:id="@+id/list_fragment"
+        class="com.landsofruin.companion.fragment.TutorialsListFragment"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp" />
+
+
+    <com.landsofruin.companion.view.ClipedCommandPanelFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:layout_toRightOf="@+id/list_fragment"
+        android:background="@drawable/command_panel_background"
+        android:clickable="true"
+        android:foreground="@drawable/command_panel_line"
+        android:padding="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:id="@+id/tutorial_title_for_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:ellipsize="end"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_light_blue"
+                    android:textSize="24sp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="40dp"
+                    android:background="#037790" />
+
+                <FrameLayout
+                    android:id="@+id/details_fragment_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/list_fragment"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </ScrollView>
+    </com.landsofruin.companion.view.ClipedCommandPanelFrameLayout>
+
+
+</RelativeLayout>

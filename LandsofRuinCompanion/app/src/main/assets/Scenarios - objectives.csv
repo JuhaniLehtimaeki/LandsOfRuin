@@ -1,0 +1,10 @@
+ID-0,Name-1,Description-2,Points on completion -3,Max count -4
+1,Defend the base,Defend a table section by preventing any zombie or enemy unit from entering the section for 3 turn cycles ,1000,1
+2,Capture the base,Kill all opponent's characters in the target map section. No enemy units or zombies may enter the map section for 3 turn cycles,1200,1
+3,Eradicate,Kill all opponent units,1000,1
+4,Escape,Escape with objective,1000,1
+5,Scavenge,Control a map section (no enemy units or zombies) and perform the Scavenge action,1200,1
+6,Free Captives,Free Captives,500,
+7,Retain Captives,Retain Captives,500,
+8,Hold the target,Only your team characters are in the designated area at the end of the game,1000,1
+9,Learn basic game mechancs,Understand the basic game mechanics of Lands of Ruin,100,2

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="facebook_application_id" translatable="false">959978750761264</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb959978750761264</string>
+    <!--<string name="twitter_app_key">vgIXE1CXM96ZKuae6dg2GFCSi</string>-->
+    <!--<string name="twitter_app_secret">lUzfaVWaMifvkBM2eWR1tRlwdjqhMso5qtm7UfiO5wdXxhHDV9</string>-->
+
+    <string name="twitter_consumer_key" translatable="false">vgIXE1CXM96ZKuae6dg2GFCSi</string>
+    <string name="twitter_consumer_secret" translatable="false">lUzfaVWaMifvkBM2eWR1tRlwdjqhMso5qtm7UfiO5wdXxhHDV9</string>
+
+
+    <!--<string name="google_client_id">1060577555630-aoonlkkklpfunaa14bd893pc8ftbnk6j.apps.googleusercontent.com</string>-->
+</resources>

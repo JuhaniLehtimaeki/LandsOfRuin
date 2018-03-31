@@ -1,0 +1,27 @@
+Type- 0,Category-1,ID-2,group-ID-3,Name-4,Mode name -5,Requires skills-6,Max targets-7,Modifier short-8,Modifier mid-9,Modifier long-10,Light infantry-11,Heavy infantry-12,Light armored-13,Heavy armored-14,Noise-15,Bullets per action-16,Clip size - 17,Clip name - 18,Weight -19,Clip weight -20,Camo modifier-21,Suppression-22,Suppression without hitting-23,Highlight priority - 24,GEAR value -25,clip GEAR value -26,maintanance GEAR value -27,image URI -28
+Ranged,Pistol,1,1,Glock 18,rapid fire,1000,2,-3,-6,-12,1,0,0,0,100,9,18,clip,0.62,0.2,2,10,5,1,25,10,5,
+Ranged,Pistol,19,1,Glock 18,burst fire,1000,1,-2,-5,-10,2,0,0,0,100,9,18,clip,0.62,0.2,2,10,5,1,25,10,5,
+Ranged,Pistol,18,1,Glock 18,semi auto,1000,1,0,-3,-6,1,0,0,0,50,3,18,clip,0.62,0.2,2,10,5,1,25,10,5,
+Ranged,Pistol,17,2,Desert Eagle,rapid fire,1000,3,-3,-6,-12,1,1,0,0,160,8,8,clip,1.897,0.5,3,15,5,1,35,10,5,
+Ranged,Pistol,2,2,Desert Eagle,slow fire,1000,2,0,-3,-6,1,1,0,0,80,3,8,clip,1.897,0.5,3,15,5,1,35,10,5,
+Ranged,SMG,16,3,MAC10,suppressing fire,1000,5,-5,-10,-20,1,0,0,0,110,32,32,clip,2.84,1,5,15,10,2,60,20,5,
+Ranged,SMG,3,3,MAC10,full auto,1000,2,1,0,-6,1,0,0,0,90,15,32,clip,2.84,1,5,15,10,2,60,20,5,
+Ranged,SMG,4,3,MAC10,focus fire,1000,1,1,0,-3,2,1,0,0,70,5,32,clip,2.84,1,5,10,5,2,60,20,5,
+Ranged,Shotgun,5,4,Remington 990,manual,1000,1,3,-4,-8,2,0,0,0,100,2,12,magazine,3.5,0.4,7,10,5,3,65,15,10,file:///android_asset/weapon_images/shotgun.jpg
+Ranged,Rifle,6,5,AK-47,focus fire,1000,1,2,2,0,2,2,0,0,100,5,30,clip,3.47,0.75,7,10,5,3,100,25,10,
+Ranged,Rifle,7,5,AK-47,full auto,1000,3,0,-2,-6,1,1,0,0,150,15,30,clip,3.47,0.75,7,10,15,3,100,25,10,
+Ranged,Rifle,13,5,AK-47,suppressing fire,1000,5,-5,-15,-20,1,0,0,0,300,30,30,clip,3.47,0.75,7,10,25,3,100,25,10,
+Ranged,LMG,8,6,M249-SAW LMG,full auto,1001,5,-6,-8,-10,2,1,0,0,400,50,200,belt,7.5,2.5,15,15,25,4,200,75,15,
+Ranged,LMG,9,6,M249-SAW LMG,focus fire,1001,1,-6,-8,-10,4,3,1,0,400,25,200,belt,7.5,2.5,15,15,5,4,200,75,15,
+Ranged,LMG,12,6,M249-SAW LMG,suppressing fire,1001,10,-18,-25,-30,1,0,0,0,800,200,200,belt,7.5,2.5,15,15,75,4,200,75,15,
+Ranged,Flame,10,7,Flame thrower,manual,1001,5,4,-10,-20,3,1,0,0,200,1,6,container,19.5,5.5,40,20,50,4,250,100,25,
+Ranged,Rifle,14,14,Harpoon gun,shoot a harpoon,1000,1,2,-3,-30,1,1,0,0,80,1,1,harpoon,1.897,0.5,3,100,5,4,25,5,5,file:///android_asset/weapon_images/balean_harpoon_gun.jpg
+Ranged,Rifle,15,15,Javelin launcher,launch the javelin,1000,1,5,-15,-30,3,0,0,0,10,1,1,spear,1.897,0.5,3,30,0,4,25,5,5,file:///android_asset/weapon_images/balean_spear.jpg
+Ranged,Rifle,20,20,vz 99 V Assault Rifle,focus fire,1000,1,2,2,0,2,2,0,0,100,5,35,clip,3.47,0.75,7,10,5,3,120,27,10,file:///android_asset/weapon_images/vz 99 V Assault Rifle.png
+Ranged,Rifle,21,20,vz 99 V Assault Rifle,full auto,1000,3,0,-2,-6,1,1,0,0,150,15,35,clip,3.47,0.75,7,10,15,3,120,27,10,file:///android_asset/weapon_images/vz 99 V Assault Rifle.png
+Ranged,Rifle,22,20,vz 99 V Assault Rifle,suppressing fire,1000,5,-5,-15,-20,1,0,0,0,300,35,35,clip,3.47,0.75,7,10,25,3,120,27,10,file:///android_asset/weapon_images/vz 99 V Assault Rifle.png
+Ranged,Pistol,23,21,LD-125,rapid fire,1000,2,-3,-6,-12,1,0,0,0,100,9,18,clip,0.62,0.2,2,10,5,1,25,10,5,file:///android_asset/weapon_images/LD 125.png
+Ranged,Pistol,24,21,LD-125,burst fire,1000,1,-2,-5,-10,2,0,0,0,100,6,18,clip,0.62,0.2,2,10,5,1,25,10,5,file:///android_asset/weapon_images/LD 125.png
+Ranged,Pistol,25,21,LD-125,semi auto,1000,1,0,-3,-6,1,0,0,0,50,3,18,clip,0.62,0.2,2,10,5,1,25,10,5,file:///android_asset/weapon_images/LD 125.png
+Ranged,Sniper Rifle,26,22,MA 2200 Sniper Rifle,aim at weak spots,1004,1,0,-2,-6,4,2,0,0,150,1,8,clip,5,0.75,10,25,15,4,400,20,15,file:///android_asset/weapon_images/MA 2200 Sniper Rifle.png
+Ranged,Sniper Rifle,27,22,MA 2200 Sniper Rifle,snapshot,1004,2,-2,-4,-8,2,1,0,0,250,4,8,clip,5,0.75,10,25,15,4,400,20,15,file:///android_asset/weapon_images/MA 2200 Sniper Rifle.png

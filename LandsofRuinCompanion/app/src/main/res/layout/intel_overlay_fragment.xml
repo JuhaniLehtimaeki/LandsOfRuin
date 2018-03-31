@@ -1,0 +1,74 @@
+<com.landsofruin.companion.view.ClipedCommandPanelFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/command_panel_background"
+    android:clickable="true"
+    android:visibility="gone"
+    android:foreground="@drawable/command_panel_line">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Intel Report"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="40dp"
+                    android:text="NOTE: this is a placeholder screen showing debug information about the rotter simulation about the area around the battlefield.\nThis screen will be completely replaced in the later releases."
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:id="@+id/intel_map_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="24dp"
+                    android:background="#FF000000"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/selector_action_button"
+                android:text="Close" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</com.landsofruin.companion.view.ClipedCommandPanelFrameLayout>

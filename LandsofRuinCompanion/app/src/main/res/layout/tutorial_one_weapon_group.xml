@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:gravity="center_horizontal"
+    >
+
+
+    <TextView
+        android:layout_gravity="left"
+        android:id="@+id/weapon_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"
+        android:textAllCaps="true"
+        android:textColor="@color/tutorial_text_color"
+        android:textSize="48sp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/weapon_image"
+            android:layout_width="260dp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:maxHeight="260dp"
+            android:adjustViewBounds="true"
+            android:layout_margin="16dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/gear_value"
+                android:drawableLeft="@drawable/gear_icon_2"
+                android:layout_width="wrap_content"
+                android:drawablePadding="16dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/tutorial_text_color"
+                android:layout_margin="8dp"/>
+
+            <TextView
+                android:id="@+id/clip_gear_value"
+                android:drawablePadding="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/tutorial_text_color"
+                android:layout_margin="8dp"
+                android:drawableLeft="@drawable/gear_icon_2"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/clip_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/tutorial_text_color"
+                android:layout_margin="8dp"/>
+
+            <TextView
+                android:id="@+id/camo_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/tutorial_text_color"
+                android:layout_margin="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/firing_modes_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF181816"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="2dp"
+                android:background="#FF212121"
+                android:singleLine="true"
+                android:text=""/>
+
+            <TextView
+                android:layout_width="40dp"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="2dp"
+                android:background="#FF212121"
+                android:singleLine="true"
+                android:text="#"/>
+
+
+            <TextView
+                android:layout_width="40dp"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="2dp"
+                android:background="#FF212121"
+                android:singleLine="true"
+                android:text="P - li"/>
+
+            <TextView
+                android:layout_width="40dp"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="2dp"
+                android:background="#FF212121"
+                android:singleLine="true"
+                android:text="P - hi"/>
+
+
+            <TextView
+                android:layout_width="40dp"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="2dp"
+                android:background="#FF212121"
+                android:singleLine="true"
+                android:text="P - la"/>
+
+            <TextView
+                android:layout_width="40dp"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="2dp"
+                android:background="#FF212121"
+                android:singleLine="true"
+                android:text="P - ha"/>
+
+            <TextView
+                android:layout_width="40dp"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="2dp"
+                android:background="#FF212121"
+                android:singleLine="true"
+                android:text="b/a"/>
+
+
+            <TextView
+                android:layout_width="40dp"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="2dp"
+                android:background="#FF212121"
+                android:singleLine="true"
+                android:text="short"/>
+
+
+            <TextView
+                android:layout_width="40dp"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="2dp"
+                android:background="#FF212121"
+                android:singleLine="true"
+                android:text="mid"/>
+
+
+            <TextView
+                android:layout_width="40dp"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="2dp"
+                android:background="#FF212121"
+                android:singleLine="true"
+                android:text="long"/>
+
+
+            <TextView
+                android:layout_width="40dp"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="2dp"
+                android:background="#FF212121"
+                android:singleLine="true"
+                android:text="noise"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="2dp"
+                android:background="#FF212121"
+                android:singleLine="true"
+                android:text="spprssn"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tutorial_text_color"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="#"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tutorial_text_color"
+            android:text="@string/tutorial_weapon_targets"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tutorial_text_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="P - li"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/tutorial_text_color"
+            android:text="@string/tutorial_weapon_pli"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tutorial_text_color"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="P - hi"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/tutorial_text_color"
+            android:text="@string/tutorial_weapon_phi"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tutorial_text_color"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="P - la"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/tutorial_text_color"
+            android:text="@string/tutorial_weapon_pla"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tutorial_text_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="P - ha"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/tutorial_text_color"
+            android:text="@string/tutorial_weapon_pha"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tutorial_text_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="b/a"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/tutorial_text_color"
+            android:text="@string/tutorial_weapon_ba"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tutorial_text_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="short"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/tutorial_text_color"
+            android:text="@string/tutorial_weapon_short"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tutorial_text_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="mid"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/tutorial_text_color"
+            android:text="@string/tutorial_weapon_mid"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tutorial_text_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="long"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/tutorial_text_color"
+            android:text="@string/tutorial_weapon_long"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tutorial_text_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="noise"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/tutorial_text_color"
+            android:text="@string/tutorial_weapon_noise"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tutorial_text_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="spprssn"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/tutorial_text_color"
+            android:text="@string/tutorial_weapon_suppression"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tutorial_text_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="camo"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/tutorial_text_color"
+            android:text="@string/tutorial_weapon_camo"/>
+    </LinearLayout>
+
+</LinearLayout>
+

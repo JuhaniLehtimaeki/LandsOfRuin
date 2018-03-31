@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.landsofruin.companion.view.CornerCuttingFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:layout_margin="4dp"
+    android:background="@drawable/solid_red_button_background"
+    android:clickable="true"
+    android:padding="2dp"
+    app:corner2="8dp">
+
+    <com.landsofruin.companion.view.CornerCuttingFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/shooting_ui_grid"
+        android:padding="1dp"
+        app:corner2="8dp">
+
+        <ImageView
+            android:id="@+id/enemy_portrait"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/target_name"
+            style="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#AA000000"
+            android:textSize="8sp" />
+    </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+</com.landsofruin.companion.view.CornerCuttingFrameLayout>

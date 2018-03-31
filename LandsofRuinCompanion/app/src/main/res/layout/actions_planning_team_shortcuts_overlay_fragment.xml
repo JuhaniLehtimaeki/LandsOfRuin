@@ -1,0 +1,61 @@
+<com.landsofruin.companion.view.ClipedCommandPanelFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/command_panel_background"
+    android:clickable="true"
+    android:foreground="@drawable/command_panel_line">
+
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.landsofruin.companion.view.MechaFontTextView
+            android:id="@+id/title"
+            style="@style/command_panel_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team Quick Actions" />
+
+
+        <TextView
+            android:id="@+id/subtitle"
+            style="@style/command_panel_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="These actions will be assigned to all of your characters who are not dead, unconscious or pinned and are on the map. Note that this will override any actions you've already assigned this turn." />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/subtitle"
+            android:fillViewport="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/quick_actions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</com.landsofruin.companion.view.ClipedCommandPanelFrameLayout>

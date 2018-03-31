@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/command_panel_background"
+    android:clickable="true">
+
+
+    <LinearLayout
+        android:id="@+id/phase_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:background="@color/toolbar_background"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/cancel_button"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/clickable_transparent_background"
+                android:src="@drawable/back_arrow" />
+
+
+            <com.landsofruin.companion.view.MechaFontTextView
+                android:id="@+id/info_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:text="Choose targets and range"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/validation_phase3_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                android:id="@+id/shoot_button"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:background="@drawable/solid_yellow_button_background"
+                android:enabled="false"
+                app:corner2="26dp"
+                app:corner3="26dp">
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="24dp"
+                    android:text="Ready"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="24sp" />
+
+            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="120dp">
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:id="@+id/range_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32dp" />
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp"
+                    android:clipToPadding="false"
+                    android:fillViewport="true"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <FrameLayout
+                            android:id="@+id/character_card_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp" />
+
+
+                        <LinearLayout
+                            android:id="@+id/targets_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/phase_2_5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:background="@color/toolbar_background"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/cancel_button_2_5"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/clickable_transparent_background"
+                android:src="@drawable/back_arrow" />
+
+
+            <com.landsofruin.companion.view.MechaFontTextView
+                android:id="@+id/info_text_2_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:text="Measure range"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/validation_phase3_text_2_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                android:id="@+id/shoot_button_2_5"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:background="@drawable/solid_yellow_button_background"
+                android:enabled="false"
+                app:corner2="26dp"
+                app:corner3="26dp">
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="24dp"
+                    android:text="Ready"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="24sp" />
+
+            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+        </LinearLayout>
+
+        <com.landsofruin.companion.view.MechaFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Measure range to the furthest away target and select the appropriate range bucket below."
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <FrameLayout
+                    android:id="@+id/range_shooter_container"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:alpha="0.4"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="32dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/range_ruler_width"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="#05788b" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/range_ruler_width"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="#05788b" />
+
+
+                        <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                            android:id="@+id/button_target_short_range"
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/solid_yellow_button_background"
+                            android:enabled="false"
+                            app:corner1="14dp"
+                            app:corner2="14dp"
+                            app:corner3="14dp"
+                            app:corner4="14dp">
+
+                            <com.landsofruin.companion.view.MechaFontTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="0'' - 10''"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="32sp" />
+
+                        </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/range_ruler_width"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="8"
+                            android:background="#05788b" />
+
+                        <View
+                            android:layout_width="@dimen/range_ruler_width"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="#05788b" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/range_ruler_width"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="#05788b" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/range_ruler_width"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="#05788b" />
+
+
+                        <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                            android:id="@+id/button_target_medium_range"
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/solid_yellow_button_background"
+                            android:enabled="false"
+                            app:corner1="14dp"
+                            app:corner2="14dp"
+                            app:corner3="14dp"
+                            app:corner4="14dp">
+
+                            <com.landsofruin.companion.view.MechaFontTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="10'' - 20''"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="32sp" />
+
+                        </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/range_ruler_width"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="#05788b" />
+
+                        <View
+                            android:layout_width="@dimen/range_ruler_width"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="#05788b" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/range_ruler_width"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="#05788b" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/range_ruler_width"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="8"
+                            android:background="#05788b" />
+
+
+                        <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                            android:id="@+id/button_target_long_range"
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/solid_yellow_button_background"
+                            android:enabled="false"
+                            app:corner1="14dp"
+                            app:corner2="14dp"
+                            app:corner3="14dp"
+                            app:corner4="14dp">
+
+                            <com.landsofruin.companion.view.MechaFontTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="20'' +"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="32sp" />
+
+                        </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/range_ruler_width"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="#05788b" />
+
+                        <View
+                            android:layout_width="@dimen/range_ruler_width"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="#05788b" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:alpha="0.4"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="@dimen/range_box_width"
+                        android:layout_height="match_parent"
+                        android:background="#05788b" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/range_box_width"
+                            android:background="#05788b" />
+
+
+                        <LinearLayout
+                            android:id="@+id/range_targets_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/range_box_width"
+                            android:background="#05788b" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/range_box_width"
+                        android:layout_height="match_parent"
+                        android:background="#05788b" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/phase_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/target_selection_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/phase_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_height"
+                android:background="@color/toolbar_background"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/cancel_shooting"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/clickable_transparent_background"
+                    android:src="@drawable/back_arrow" />
+
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:id="@+id/info_text_phase_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:text="Choose weapon and firing mode"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/validation_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                    android:id="@+id/done_phase_1_button"
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/solid_yellow_button_background"
+                    android:enabled="false"
+                    app:corner2="26dp"
+                    app:corner3="26dp">
+
+                    <com.landsofruin.companion.view.MechaFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="24dp"
+                        android:text="Ready"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="24sp" />
+
+                </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+            </LinearLayout>
+
+
+            <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#061333"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="bottom"
+                    android:background="#1b2e3e" />
+
+                <LinearLayout
+                    android:id="@+id/weapons_tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#05788b" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/modes_pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/waiting_for_enemy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Your opponent is preparing to attack. Please wait.."
+            android:textColor="#FFFFFFFF"
+            android:textSize="32sp" />
+
+
+    </FrameLayout>
+</FrameLayout>

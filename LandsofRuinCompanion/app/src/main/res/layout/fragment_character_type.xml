@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="characterType"
+            type="com.landsofruin.companion.state.gameruleobjects.charactertypes.CharacterType" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/battle_art" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/battle_overlay" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="80dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text='@{""+characterType.id}' />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
+                            <EditText
+                                android:id="@+id/name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Name"
+                                android:text="@{characterType.name}" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
+                            <EditText
+                                android:id="@+id/base_aps"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Base APs"
+                                android:inputType="number"
+                                android:text='@{""+characterType.baseAPs}' />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
+                            <EditText
+                                android:id="@+id/movement_per_ap"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Movement per AP"
+                                android:inputType="numberDecimal"
+                                android:text='@{""+characterType.movementPerAP}' />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
+                            <EditText
+                                android:id="@+id/baseTargetOffensive"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Base target offensive"
+                                android:inputType="number"
+                                android:text='@{""+characterType.baseTargetOffensive}' />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
+                            <EditText
+                                android:id="@+id/baseTargetOffensiveCloseCombat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="baseTargetOffensiveCloseCombat"
+                                android:inputType="number"
+                                android:text='@{""+characterType.baseTargetOffensiveCloseCombat}' />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
+                            <EditText
+                                android:id="@+id/baseTargetDefensive"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="baseTargetDefensive"
+                                android:inputType="number"
+                                android:text='@{""+characterType.baseTargetDefensive}' />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
+                            <EditText
+                                android:id="@+id/baseLeadership"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="baseLeadership"
+                                android:inputType="number"
+                                android:text='@{""+characterType.baseLeadership}' />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
+                            <EditText
+                                android:id="@+id/baseMaxLoad"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="baseMaxLoad"
+                                android:inputType="number"
+                                android:text='@{""+characterType.baseMaxLoad}' />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
+                            <EditText
+                                android:id="@+id/baseThrowRange"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="baseThrowRange"
+                                android:inputType="number"
+                                android:text='@{""+characterType.baseThrowRange}' />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
+                            <EditText
+                                android:id="@+id/detection"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="detection"
+                                android:inputType="number"
+                                android:text='@{""+characterType.detection}' />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
+                            <EditText
+                                android:id="@+id/baseCamo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="baseCamo"
+                                android:inputType="number"
+                                android:text='@{""+characterType.baseCamo}' />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
+                            <EditText
+                                android:id="@+id/baseSuppressionDefence"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="baseSuppressionDefence"
+                                android:inputType="number"
+                                android:text='@{""+characterType.baseSuppressionDefence}' />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
+                            <EditText
+                                android:id="@+id/baseZombieAgroRange"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="baseZombieAgroRange"
+                                android:inputType="number"
+                                android:text='@{""+characterType.baseZombieAgroRange}' />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
+                            <EditText
+                                android:id="@+id/gearValue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="gearValue"
+                                android:inputType="number"
+                                android:text='@{""+characterType.gearValue}' />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.AppCompatRadioButton
+                                android:id="@+id/type_hero"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="@{characterType.type == 0}"
+                                android:text="Hero" />
+
+                            <android.support.v7.widget.AppCompatRadioButton
+                                android:id="@+id/type_squad_independent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="@{characterType.type == 1}"
+                                android:text="Squad - Independent" />
+
+                            <android.support.v7.widget.AppCompatRadioButton
+                                android:id="@+id/type_squad_close_support"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="@{characterType.type == 1}"
+                                android:text="Squad - Close Support" />
+
+
+                            <android.support.v7.widget.AppCompatRadioButton
+                                android:id="@+id/type_squad_slave"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="@{characterType.type == 1}"
+                                android:text="Squad - Slave" />
+
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                android:id="@+id/save"
+                android:layout_width="600dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:background="@drawable/solid_yellow_button_background"
+                app:corner1="16dp"
+                app:corner2="16dp"
+                app:corner3="16dp"
+                app:corner4="16dp">
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Save"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="28sp" />
+
+
+            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

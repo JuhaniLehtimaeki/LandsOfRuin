@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:endColor="#040c19"
+                android:gradientRadius="500"
+                android:startColor="#0e2956"
+                android:type="radial" />
+
+        </shape>
+    </item>
+    <item>
+        <bitmap
+
+            android:dither="true"
+            android:src="@drawable/command_panel_tile"
+            android:tileMode="repeat" />
+
+    </item>
+    <item
+        android:bottom="0dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp">
+        <shape android:id="@+id/listview_background_shape">
+            <stroke
+                android:width="2dp"
+                android:color="#ff5dbce2" />
+            <padding
+                android:bottom="2dp"
+                android:left="2dp"
+                android:right="2dp"
+                android:top="2dp" />
+        </shape>
+    </item>
+
+    <item
+        android:left="8dp"
+        android:top="8dp">
+
+        <bitmap
+            android:gravity="left|top"
+            android:src="@drawable/ic_help_outline_white_48dp"
+            android:tint="#FFFFFFFF" />
+
+    </item>
+
+
+</layer-list>

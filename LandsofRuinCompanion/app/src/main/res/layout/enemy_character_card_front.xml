@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/enemy_card_background">
+
+    <ImageView
+        android:id="@+id/character_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop" />
+
+
+    <com.landsofruin.companion.view.MechaFontTextView
+        android:id="@+id/character_name"
+        style="@style/character_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/enemy_card_header"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="4dp"
+        android:singleLine="true" />
+
+
+    <LinearLayout
+        android:id="@+id/effect_icon_container"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/enemy_card_effects"
+        android:orientation="horizontal" />
+
+
+    <LinearLayout
+        android:id="@+id/assigned_actions"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="5dp"
+        android:background="@drawable/enemy_card_actions"
+        android:orientation="horizontal" />
+
+
+    <LinearLayout
+        android:id="@+id/zombie_hit_count_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="100dp"
+        android:gravity="bottom"
+        android:orientation="vertical" />
+
+
+    <LinearLayout
+        android:id="@+id/weapons_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="35dp"
+        android:gravity="left"
+        android:orientation="vertical" />
+
+
+</FrameLayout>

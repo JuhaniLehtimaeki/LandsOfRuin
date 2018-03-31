@@ -1,0 +1,26 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="character_name" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
+    <style name="movement" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">#FF000000</item>
+    </style>
+
+
+    <style name="suppression" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FF000000</item>
+    </style>
+
+    <style name="unresolved_hits" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+
+</resources>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.landsofruin.companion.view.CornerCuttingFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="230dp"
+    android:layout_height="50dp"
+    android:background="@color/bg_colour_3"
+    app:corner3="15dp"
+    app:corner4="15dp">
+
+    <com.landsofruin.companion.view.CornerCuttingFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#08586B"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:corner3="10dp"
+        app:corner4="10dp" />
+
+
+    <FrameLayout
+        android:layout_width="32.5dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/indicator_turn_number">
+
+        <TextView
+            android:id="@+id/turn_counter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:textColor="#FF000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+
+        <FrameLayout
+            android:id="@+id/action"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="4dp">
+
+
+            <ImageView
+                android:id="@+id/action_gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/turn_action_gone" />
+
+            <ImageView
+                android:id="@+id/action_my"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/turn_action_mine" />
+
+            <ImageView
+                android:id="@+id/action_enemy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/turn_action_enemy" />
+
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/sync"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="4dp">
+
+            <ImageView
+                android:id="@+id/sync_gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/turn_sync_gone" />
+
+
+            <ImageView
+                android:id="@+id/sync_my"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/turn_sync_mine" />
+
+            <ImageView
+                android:id="@+id/sync_enemy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/turn_sync_enemy" />
+
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/command"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="4dp">
+
+            <ImageView
+                android:id="@+id/command_gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/turn_command_gone" />
+
+            <ImageView
+                android:id="@+id/command_my"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/turn_command_mine" />
+
+            <ImageView
+                android:id="@+id/command_enemy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/turn_command_enemy" />
+
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/environment"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="4dp">
+
+            <ImageView
+                android:id="@+id/environment_gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/turn_environment_gone" />
+
+
+            <ImageView
+                android:id="@+id/environment_my"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/turn_environment_mine" />
+
+            <ImageView
+                android:id="@+id/environment_enemy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/turn_environment_enemy" />
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</com.landsofruin.companion.view.CornerCuttingFrameLayout>

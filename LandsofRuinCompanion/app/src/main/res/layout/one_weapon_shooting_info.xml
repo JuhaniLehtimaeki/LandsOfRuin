@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.landsofruin.companion.view.MechaFontTextView
+            android:id="@+id/mode_name"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:singleLine="false"
+            android:textAllCaps="true"
+            android:textColor="@color/brown_shooting_ui_text"
+            android:textSize="10sp" />
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                android:layout_width="@dimen/shooting_ui_indicator_size_planning"
+                android:layout_height="@dimen/shooting_ui_indicator_size_planning"
+                android:layout_gravity="center"
+                app:corner1="@dimen/shooting_ui_indicator_corner_size_planning"
+                app:corner2="@dimen/shooting_ui_indicator_corner_size_planning"
+                app:corner3="@dimen/shooting_ui_indicator_corner_size_planning"
+                app:corner4="@dimen/shooting_ui_indicator_corner_size_planning">
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:id="@+id/short_range"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/shooting_ui_info_textsize_planning" />
+
+
+            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+        </FrameLayout>
+
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/brown_shooting_ui_grid" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                android:layout_width="@dimen/shooting_ui_indicator_size_planning"
+                android:layout_height="@dimen/shooting_ui_indicator_size_planning"
+                android:layout_gravity="center"
+                app:corner1="@dimen/shooting_ui_indicator_corner_size_planning"
+                app:corner2="@dimen/shooting_ui_indicator_corner_size_planning"
+                app:corner3="@dimen/shooting_ui_indicator_corner_size_planning"
+                app:corner4="@dimen/shooting_ui_indicator_corner_size_planning">
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:id="@+id/mid_range"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/shooting_ui_info_textsize_planning" />
+
+            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/brown_shooting_ui_grid" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                android:layout_width="@dimen/shooting_ui_indicator_size_planning"
+                android:layout_height="@dimen/shooting_ui_indicator_size_planning"
+                android:layout_gravity="center"
+                app:corner1="@dimen/shooting_ui_indicator_corner_size_planning"
+                app:corner2="@dimen/shooting_ui_indicator_corner_size_planning"
+                app:corner3="@dimen/shooting_ui_indicator_corner_size_planning"
+                app:corner4="@dimen/shooting_ui_indicator_corner_size_planning">
+
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:id="@+id/long_range"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/shooting_ui_info_textsize_planning" />
+
+
+            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@color/brown_shooting_ui_grid" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/brown_shooting_ui_grid_translucent">
+
+
+            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                android:layout_width="@dimen/shooting_ui_indicator_size_planning"
+                android:layout_height="@dimen/shooting_ui_indicator_size_planning"
+                android:layout_gravity="center"
+                app:corner1="4dp"
+                app:corner2="4dp"
+                app:corner3="4dp"
+                app:corner4="4dp">
+
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:id="@+id/noise"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/shooting_ui_info_textsize_planning" />
+
+            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+        </FrameLayout>
+
+
+        <com.landsofruin.companion.view.MechaFontTextView
+            android:id="@+id/targets"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@color/brown_shooting_ui_grid_translucent"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textColor="@color/brown_shooting_ui_text"
+            android:textSize="@dimen/shooting_ui_info_textsize_planning" />
+
+
+        <com.landsofruin.companion.view.MechaFontTextView
+            android:id="@+id/power"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@color/brown_shooting_ui_grid_translucent"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textColor="@color/brown_shooting_ui_text"
+            android:textSize="@dimen/shooting_ui_info_textsize_planning" />
+
+
+        <com.landsofruin.companion.view.MechaFontTextView
+            android:id="@+id/ammo_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@color/brown_shooting_ui_grid_translucent"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textColor="@color/brown_shooting_ui_text"
+            android:textSize="@dimen/shooting_ui_info_textsize_planning" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="200dp"
+        android:background="@color/brown_shooting_ui_grid" />
+</LinearLayout>

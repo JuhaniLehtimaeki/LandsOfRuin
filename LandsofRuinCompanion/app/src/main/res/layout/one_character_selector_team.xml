@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.landsofruin.companion.view.ClipedCommandPanelFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="8dp"
+    android:alpha="0.5"
+    android:background="@drawable/command_panel_background"
+    android:clickable="true"
+    android:foreground="@drawable/command_panel_line">
+
+    <ImageView
+        android:id="@+id/character_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/scenario_panel_top_gradient" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/command_panel_top_gradient" />
+
+
+    <com.landsofruin.companion.view.MechaFontTextView
+        android:id="@+id/character_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+
+
+    <com.landsofruin.companion.view.MechaFontTextView
+        android:id="@+id/in_team_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_margin="8dp"
+        android:alpha="0"
+        android:gravity="center_horizontal"
+        android:text="in team"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:duplicateParentState="true"
+        android:background="@drawable/clickable_transparent_background"
+         />
+
+</com.landsofruin.companion.view.ClipedCommandPanelFrameLayout>

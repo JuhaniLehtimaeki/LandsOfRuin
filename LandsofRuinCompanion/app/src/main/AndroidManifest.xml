@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.landsofruin.gametracker">
+
+    <uses-sdk tools:overrideLibrary="com.firebase.ui.auth, com.firebase.ui" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE"
+        android:required="true" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:required="true" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:requiresSmallestWidthDp="511"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name="com.landsofruin.companion.CompanionApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.landsofruin.companion.GameLobbyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.landsofruin.companion.activity.AboutActivity"
+            android:theme="@style/AppThemeWithActionBar" />
+        <activity
+            android:name="com.landsofruin.companion.GameActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.landsofruin.companion.NearbyGamesActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.landsofruin.companion.GameSetupActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.landsofruin.companion.TutorialsActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.landsofruin.companion.ruleobjectsui.RuleObjectsActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity android:name="com.landsofruin.companion.heroblueprints.HeroBlueprintsActivity" />
+        <activity android:name="com.landsofruin.companion.heroblueprints.HeroBlueprintActivity" />
+        <activity android:name="com.landsofruin.companion.tribemanagement.YourTribeCharactersActivity" />
+        <activity android:name="com.landsofruin.companion.ruleobjectsui.CharacterTypesActivity" />
+        <activity android:name="com.landsofruin.companion.ruleobjectsui.CharacterTypeActivity" />
+        <activity android:name="com.landsofruin.companion.tribemanagement.YourTribeActivity" />
+        <activity android:name="com.landsofruin.companion.activity.WelcomeActivity" />
+
+        <service
+            android:name="com.landsofruin.companion.net.server.ServerService"
+            android:exported="false" />
+        <service
+            android:name="com.landsofruin.companion.net.client.ClientService"
+            android:exported="false" />
+
+        <provider
+            android:name="com.landsofruin.companion.provider.WastelandProvider"
+            android:authorities="com.landsofruin.wastelands"
+            android:label="Wastelands"
+            android:syncable="true" />
+
+        <activity
+            android:name="com.landsofruin.companion.activity.FeedbackActivity"
+            android:label="@string/title_activity_feedback_and_rules" />
+
+        <meta-data
+            android:name="CLOUDINARY_URL"
+            android:value="cloudinary://362936216644837:hc6S9on4Au950NO1PizqJQv5TAQ@sixex-games" />
+
+        <activity android:name="com.landsofruin.companion.battlereport.BattleReportsActivity" />
+        <activity
+            android:name="com.landsofruin.companion.battlereport.BattleReportTabsActivity"
+            android:label="@string/title_activity_battle_report_tabs"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.landsofruin.companion.ruleobjectsui.WeaponsEditorActivity" />
+        <activity android:name="com.landsofruin.companion.ruleobjectsui.WeaponEditorActivity" />
+        <activity android:name="com.landsofruin.companion.ruleobjectsui.SkillsEditorActivity" />
+        <activity android:name="com.landsofruin.companion.ruleobjectsui.ActionsEditorActivity" />
+        <activity android:name="com.landsofruin.companion.tribemanagement.MiniaturePicsActivity" />
+        <activity android:name="com.landsofruin.companion.tribemanagement.AddPictureActivity" />
+        <activity android:name="com.landsofruin.companion.ruleobjectsui.ActionActivity" />
+        <activity android:name="com.landsofruin.companion.ruleobjectsui.SkillActivity" />
+        <activity android:name="com.landsofruin.companion.tutorial.LearnTheGameActivity" />
+        <activity android:name="com.landsofruin.companion.activity.MapEditorActivity" />
+        <activity
+            android:name="com.landsofruin.companion.progress.ProgressActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.landsofruin.companion.tutorial.Tutorial1Activity" />
+    </application>
+
+</manifest>

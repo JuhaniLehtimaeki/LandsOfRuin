@@ -1,0 +1,247 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:background="@color/toolbar_background"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/clickable_transparent_background"
+                android:src="@drawable/back_arrow" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    style="@style/setup_toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="4dp"
+                    android:text="Game Lobby" />
+
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    style="@style/setup_toolbar_sub_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="4dp"
+                    android:text="Wait for players to join" />
+
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/info_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/clickable_transparent_background"
+                android:clickable="true"
+                android:padding="8dp"
+                android:src="@drawable/ic_info_bubble"
+                android:tint="#FFFFFFFF"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/scenario_validation_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16sp" />
+
+
+            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                android:id="@+id/done_button"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:background="@drawable/solid_yellow_button_background"
+                android:enabled="false"
+                app:corner2="26dp"
+                app:corner3="26dp">
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="24dp"
+                    android:text="Start Game"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="24sp" />
+
+            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.landsofruin.companion.view.MechaFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginTop="32dp"
+                            android:ellipsize="end"
+                            android:text="Players"
+                            android:textAllCaps="true"
+                            android:textColor="@color/text_light_blue"
+                            android:textSize="16sp" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:background="#037790" />
+
+
+                        <LinearLayout
+                            android:id="@+id/players_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="32dp"
+                            android:orientation="vertical" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:background="#037790" />
+
+
+                        <TextView
+                            android:id="@+id/ip_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Bluestacks emulator (and in some other cases) the automatic game discovery does not work. In that case you opponent can manually type in the IP address and port to join this game:"
+                            android:textColor="#FFFFFFFF"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/ip_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#FFFFFFFF"
+                            android:textSize="24sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.landsofruin.companion.view.MechaFontTextView
+                            android:id="@+id/admin_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="40dp"
+                            android:background="@drawable/info_container_background"
+                            android:paddingBottom="16dp"
+                            android:paddingLeft="66dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="16dp"
+                            android:text="@string/players_setup_admin_text"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+
+                        <com.landsofruin.companion.view.MechaFontTextView
+                            android:id="@+id/non_admin_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="40dp"
+                            android:background="@drawable/info_container_background"
+                            android:paddingBottom="16dp"
+                            android:paddingLeft="66dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="16dp"
+                            android:text="@string/players_setup_non_admin_text"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/bluestacks_warning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="40dp"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="68dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="16dp"
+                    android:text="@string/bluestacks_warning"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</FrameLayout>

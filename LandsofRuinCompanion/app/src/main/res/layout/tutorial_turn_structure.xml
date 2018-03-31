@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/tutorial_turn_structure_general"
+        android:textColor="@color/tutorial_text_color"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:drawableLeft="@drawable/turn_action_mine"
+        android:drawablePadding="8dp"
+        android:text="@string/tutorial_turn_structure_action"
+        android:textColor="@color/tutorial_text_color"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:drawableLeft="@drawable/turn_sync_mine"
+        android:drawablePadding="8dp"
+        android:text="@string/tutorial_turn_structure_move"
+        android:textColor="@color/tutorial_text_color"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:drawableLeft="@drawable/turn_command_mine"
+        android:drawablePadding="8dp"
+        android:text="@string/tutorial_turn_structure_command"
+        android:textColor="@color/tutorial_text_color"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:drawableLeft="@drawable/turn_environment_mine"
+        android:drawablePadding="8dp"
+        android:text="@string/tutorial_turn_structure_zombie"
+        android:textColor="@color/tutorial_text_color"
+        android:textSize="24sp" />
+
+
+</LinearLayout>

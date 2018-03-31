@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/undo_phase_change"
+        android:title="Undo Phase Change" />
+
+    <item
+        android:id="@+id/feedback"
+        android:title="Feedback" />
+    <item
+        android:id="@+id/about_menu"
+        android:title="About LoR" />
+    <item
+        android:id="@+id/end_game"
+        android:title="End game" />
+
+    <item
+        android:id="@+id/rotate_map"
+        android:title="Rotate map" />
+
+    <item
+        android:id="@+id/enable_tutorial"
+        android:title="Enable tutorials" />
+
+
+    <item
+        android:id="@+id/reset_tutorials"
+        android:title="Reset tutorials" />
+
+    <item
+        android:id="@+id/scenario"
+        android:title="Scenario" />
+</menu>

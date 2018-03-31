@@ -1,0 +1,102 @@
+,,,,"(offensive,defensive,turns)",,,,
+D100 roll -0,Effect -1,Public result -2,Private result -3,Modifiers -4,Adds effect -5,Psychology effect-6,Renown gain. of target's GEAR - 7,Wound location 8
+1,No effect,No effect,No effect,,,0,0.01,
+2,,,,,,,,
+3,,,,,,,,
+4,,,,,,,,
+5,,,,,,,,
+6,,,,,,,,
+7,,,,,,,,
+8,,,,,,,,
+9,,,,,,,,
+10,"Shocked, -1 to all offensive actions next turn",Shocked,Shocked,"-1,0,1",,1,0.05,4
+11,,,,,,,,
+12,"Shocked, -1 to all offensive actions next turn",Shocked,Shocked,"-1,0,1",,1,0.05,3
+13,,,,,,,,
+14,,,,,,,,
+15,"Shocked, -1 to all actions next turn",Shocked,Shocked,"-1,-1,1",,1,0.15,3
+16,,,,,,,,
+17,"Shocked, -1 to all actions next turn",Shocked,Shocked,"-1,-1,1",,1,0.15,4
+18,,,,,,,,
+19,,,,,,,,
+20,Pinned down,Pinned,Down,,4,1,0.2,5
+21,,,,,,,,
+22,,,,,,,,
+23,,,,,,,,
+24,,,,,,,,
+25,"Pinned down, shocked",Pinned,Down,"-1,-1,1",4,1,0.25,5
+26,,,,,,,,
+27,,,,,,,,
+28,,,,,,,,
+29,,,,,,,,
+30,"Light wound, -1 to all offensive action rolls for the rest of the game",Wounded,Wounded,"-1,0,0",,2,0.3,4
+31,,,,,,,,
+32,"Light wound, -1 to all offensive action rolls for the rest of the game",Wounded,Wounded,"-1,0,0",,2,0.3,3
+33,,,,,,,,
+34,,,,,,,,
+35,"Wounded, -1 to all action rolls for the rest of the game",Wounded,Wounded,"-1,-1,0",,2,0.35,3
+36,,,,,,,,
+37,"Wounded, -1 to all action rolls for the rest of the game",Wounded,Wounded,"-1,-1,0",,2,0.35,4
+38,,,,,,,,
+39,,,,,,,,
+40,Wounded and bleeding,Wounded,Wounded,"-1,-1,0",5,2,0.5,1
+41,,,,,,,,
+42,Wounded and bleeding,Wounded,Wounded,"-1,-1,0",5,2,0.5,2
+43,,,,,,,,
+44,,,,,,,,
+45,Wounded and bleeding,Wounded,Wounded,"-1,-1,0",5,2,0.55,1
+46,,,,,,,,
+47,Wounded and bleeding,Wounded,Wounded,"-1,-1,0",5,2,0.55,2
+48,,,,,,,,
+49,,,,,,,,
+50,Badly wounded and bleeding,Badly Wounded,Wounded,"-2,-1,0",5,3,0.7,5
+51,,,,,,,,
+52,,,,,,,,
+53,,,,,,,,
+54,,,,,,,,
+55,Badly wounded and bleeding,Badly Wounded,Wounded,"-2,-2,0",5,3,0.75,5
+56,,,,,,,,
+57,,,,,,,,
+58,,,,,,,,
+59,,,,,,,,
+60,"Badly wounded, bleeding, pinned",Badly Wounded,Wounded,"-2,-2,0","5,4",3,0.8,6
+61,,,,,,,,
+62,,,,,,,,
+63,,,,,,,,
+64,,,,,,,,
+65,"Unconsious, wounded",Unconsious,Down,"-1,-1,0",10,3,0.9,5
+66,,,,,,,,
+67,,,,,,,,
+68,,,,,,,,
+69,,,,,,,,
+70,"Unconsious, wounded, bleeding",Unconsious,Down,"-1,-1,0","10,5",3,0.95,6
+71,,,,,,,,
+72,,,,,,,,
+73,,,,,,,,
+74,,,,,,,,
+75,"Unconsious, badly wounded, bleeding",Unconsious,Down,"-2,-2,0","10,5",3,0.95,6
+76,,,,,,,,
+77,,,,,,,,
+78,,,,,,,,
+79,,,,,,,,
+80,"Dead, massive head trauma",Dead,Down,,11,4,1,6
+81,,,,,,,,
+82,,,,,,,,
+83,,,,,,,,
+84,,,,,,,,
+85,,,,,,,,
+86,,,,,,,,
+87,,,,,,,,
+88,,,,,,,,
+89,,,,,,,,
+90,"Dead, decapitated",Dead,Down,,11,5,1.5,6
+91,,,,,,,,
+92,,,,,,,,
+93,,,,,,,,
+94,,,,,,,,
+95,"Dead, disemboweled - screaming as death slowly overtakess",Dead,Down,,11,6,2,5
+96,,,,,,,,
+97,,,,,,,,
+98,,,,,,,,
+99,,,,,,,,
+100,,,,,,,,

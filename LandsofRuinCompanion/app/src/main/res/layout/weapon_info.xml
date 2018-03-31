@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="57.5dp"
+    android:layout_height="27.5dp"
+    android:layout_margin="1dp"
+    android:background="@drawable/card_weapon"
+    android:scaleType="centerCrop"
+    tools:showIn="@layout/character_card_front">
+
+    <ImageView
+        android:id="@+id/highlight_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="2dp"
+        android:scaleType="centerCrop"
+        tools:showIn="@layout/character_card_front" />
+
+    <TextView
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="3dp"
+        android:layout_gravity="bottom|right"
+        android:textColor="#ff83ddfd"
+        android:id="@+id/skill_value"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="7sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:layout_gravity="left|top"
+        android:textColor="#ff83ddfd"
+        android:layout_margin="3dp"
+        android:id="@+id/actions_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</FrameLayout>

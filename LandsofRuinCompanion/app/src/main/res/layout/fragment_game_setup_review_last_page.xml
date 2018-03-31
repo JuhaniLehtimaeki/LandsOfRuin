@@ -1,0 +1,685 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:background="@color/toolbar_background"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/clickable_transparent_background"
+                android:src="@drawable/back_arrow" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:id="@+id/info_text"
+                    style="@style/setup_toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="4dp"
+                    android:text="Overview" />
+
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:id="@+id/validation_text"
+                    style="@style/setup_toolbar_sub_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="4dp"
+                    android:text="Review the selection and press ready" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                android:id="@+id/ready_button"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:background="@drawable/solid_yellow_button_background"
+                app:corner2="26dp"
+                app:corner3="26dp">
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="24dp"
+                    android:text="Ready"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="24sp" />
+
+            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+        </LinearLayout>
+
+        <com.landsofruin.companion.view.CornerCuttingFrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/toolbar_background"
+            android:paddingBottom="8dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="8dp"
+            app:corner3="10dp"
+            app:corner4="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:id="@+id/scenario_tab_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="Scenario"
+                    android:textAllCaps="true"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/separator_arrow" />
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:id="@+id/map_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="Table"
+                    android:textAllCaps="true"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/separator_arrow" />
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:id="@+id/team_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="Team"
+                    android:textAllCaps="true"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/separator_arrow" />
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:id="@+id/overview_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="Overview"
+                    android:textAllCaps="true"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/separator_arrow" />
+
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:id="@+id/start_game_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="Start game"
+                    android:textAllCaps="true"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="56dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:paddingBottom="150dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal">
+
+                            <com.landsofruin.companion.view.MechaFontTextView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="Game Name:"
+                                android:textAllCaps="true"
+                                android:textColor="@color/text_light_blue"
+                                android:textSize="16sp" />
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/clickable_transparent_background"
+                                    android:textColor="#ffffff"
+                                    android:textSize="16sp" />
+
+
+                                <TextView
+                                    android:id="@+id/title_subtext"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="(tap to change)"
+                                    android:textColor="#FFCCCCCC"
+                                    android:textSize="12sp"
+                                    android:textStyle="italic" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal">
+
+                            <com.landsofruin.companion.view.MechaFontTextView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="Scenario:"
+                                android:textAllCaps="true"
+                                android:textColor="@color/text_light_blue"
+                                android:textSize="16sp" />
+
+
+                            <TextView
+                                android:id="@+id/scenario_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:orientation="horizontal">
+
+                            <com.landsofruin.companion.view.MechaFontTextView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="Game mode:"
+                                android:textAllCaps="true"
+                                android:textColor="@color/text_light_blue"
+                                android:textSize="16sp" />
+
+
+                            <TextView
+                                android:id="@+id/game_mode"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="16sp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal">
+
+                            <com.landsofruin.companion.view.MechaFontTextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="Units:"
+                                android:textAllCaps="true"
+                                android:textColor="@color/text_light_blue"
+                                android:textSize="16sp" />
+
+                            <RadioGroup
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <android.support.v7.widget.AppCompatRadioButton
+                                    android:id="@+id/radio_inches"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:enabled="false"
+                                    android:text="Inches" />
+
+                                <android.support.v7.widget.AppCompatRadioButton
+                                    android:id="@+id/radio_cm"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:enabled="false"
+                                    android:text="CM" />
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.landsofruin.companion.view.MechaFontTextView
+                                android:layout_width="105dp"
+                                android:layout_height="wrap_content"
+                                android:text="Dice colours:"
+                                android:textAllCaps="true"
+                                android:textColor="@color/text_light_blue"
+                                android:textSize="16sp" />
+
+
+                            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_margin="4dp"
+                                android:background="@color/light_blue"
+                                android:padding="2dp"
+                                app:corner1="8dp"
+                                app:corner2="8dp"
+                                app:corner3="8dp"
+                                app:corner4="8dp">
+
+                                <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#FF5a254f"
+                                    app:corner1="6dp"
+                                    app:corner2="6dp"
+                                    app:corner3="6dp"
+                                    app:corner4="6dp" />
+
+                            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+
+                            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_margin="4dp"
+                                android:background="@color/light_blue"
+                                android:padding="2dp"
+                                app:corner1="8dp"
+                                app:corner2="8dp"
+                                app:corner3="8dp"
+                                app:corner4="8dp">
+
+                                <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#FFb22d1e"
+                                    app:corner1="6dp"
+                                    app:corner2="6dp"
+                                    app:corner3="6dp"
+                                    app:corner4="6dp" />
+
+                            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+
+                            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_margin="4dp"
+                                android:background="@color/light_blue"
+                                android:padding="2dp"
+                                app:corner1="8dp"
+                                app:corner2="8dp"
+                                app:corner3="8dp"
+                                app:corner4="8dp">
+
+                                <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#FF026e3a"
+                                    app:corner1="6dp"
+                                    app:corner2="6dp"
+                                    app:corner3="6dp"
+                                    app:corner4="6dp" />
+
+                            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+
+                            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_margin="4dp"
+                                android:background="@color/light_blue"
+                                android:padding="2dp"
+                                app:corner1="8dp"
+                                app:corner2="8dp"
+                                app:corner3="8dp"
+                                app:corner4="8dp">
+
+                                <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#FF1056ac"
+                                    app:corner1="6dp"
+                                    app:corner2="6dp"
+                                    app:corner3="6dp"
+                                    app:corner4="6dp" />
+
+                            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+
+                            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_margin="4dp"
+                                android:background="@color/light_blue"
+                                android:padding="2dp"
+                                app:corner1="8dp"
+                                app:corner2="8dp"
+                                app:corner3="8dp"
+                                app:corner4="8dp">
+
+                                <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#FF030303"
+                                    app:corner1="6dp"
+                                    app:corner2="6dp"
+                                    app:corner3="6dp"
+                                    app:corner4="6dp" />
+
+                            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+
+                            <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_margin="4dp"
+                                android:background="@color/light_blue"
+                                android:padding="2dp"
+                                app:corner1="8dp"
+                                app:corner2="8dp"
+                                app:corner3="8dp"
+                                app:corner4="8dp">
+
+                                <com.landsofruin.companion.view.CornerCuttingFrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#FFd6dbd4"
+                                    app:corner1="6dp"
+                                    app:corner2="6dp"
+                                    app:corner3="6dp"
+                                    app:corner4="6dp" />
+
+                            </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="8dp"
+                            android:text="(these options will be available in later versions)" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="bottom"
+                    android:background="#037790" />
+
+
+                <com.landsofruin.companion.view.MechaFontTextView
+                    android:id="@+id/players_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:ellipsize="end"
+                    android:text="Connected Players"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_light_blue"
+                    android:textSize="16sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/players"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="horizontal" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="8dp"
+                    android:background="#037790" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <com.landsofruin.companion.view.MechaFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:text="Selected Map"
+                            android:textAllCaps="true"
+                            android:textColor="@color/text_light_blue"
+                            android:textSize="16sp" />
+
+
+                        <com.landsofruin.companion.map.MapView
+                            android:id="@+id/map_preview"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.landsofruin.companion.view.MechaFontTextView
+                            android:id="@+id/team_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:text="Your team"
+                            android:textAllCaps="true"
+                            android:textColor="@color/text_light_blue"
+                            android:textSize="16sp" />
+
+
+                        <LinearLayout
+                            android:id="@+id/character_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="32dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:orientation="horizontal" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/admin_start_overlay"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_height="match_parent"
+        android:background="@drawable/command_panel_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.landsofruin.companion.view.MechaFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="40dp"
+            android:text="Everything is ready!"
+            android:textColor="#FFFFFFFF"
+            android:textSize="32sp" />
+
+
+        <com.landsofruin.companion.view.CornerCuttingFrameLayout
+            android:id="@+id/start_button"
+            android:layout_width="340dp"
+            android:layout_height="150dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/solid_yellow_button_background"
+            app:corner1="26dp"
+            app:corner2="26dp"
+            app:corner3="26dp"
+            app:corner4="26dp">
+
+            <com.landsofruin.companion.view.MechaFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Start the Game"
+                android:textColor="#FFFFFFFF"
+                android:textSize="32sp" />
+
+        </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

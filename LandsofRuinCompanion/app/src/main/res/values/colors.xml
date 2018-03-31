@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="darkened_bg">#99000000</color>
+    <color name="button_pressed">#808080</color>
+    <color name="button_selected">#d0d0d0</color>
+    <color name="button_disabled">#111111</color>
+    <color name="button_off">#444444</color>
+
+    <color name="background_solid">#FF000000</color>
+
+    <color name="transparent">#00000000</color>
+
+
+    <drawable name="click_stealer_down">#BB000000</drawable>
+
+
+    <color name="bg_colour_1">#FF1b2e3d</color>
+    <color name="bg_colour_2">#FF244056</color>
+    <color name="bg_colour_3">#FF021033</color>
+
+    <color name="light_blue">#ff5dbce2</color>
+
+    <color name="red_button_bg">#a60703</color>
+    <color name="red_button_bg_pressed">#580200</color>
+
+
+    <color name="text_light_blue">#01e9ff</color>
+    <color name="text_dark_blue">#04768e</color>
+
+    <color name="light_blue_button_bg">#037790</color>
+    <color name="shooting_ui_grid">#2b4661</color>
+    <color name="shooting_ui_disabled">#662b4661</color>
+    <color name="shooting_ui_grid_translucent">#662b4661</color>
+    <color name="shooting_ui_darker_blue">#1b2e3e</color>
+
+
+    <color name="brown_shooting_ui_grid">#33ff9300</color>
+    <color name="brown_shooting_ui_disabled">#05ff9300</color>
+    <color name="brown_shooting_ui_grid_translucent">#45ff9300</color>
+    <color name="brown_shooting_ui_darker_blue">#66f25f00</color>
+    <color name="brown_shooting_ui_text">#FFFFFFFF</color>
+
+    <color name="yellow_button_bg">#ffac2a</color>
+    <color name="yellow_button_bg_pressed">#AE6A00</color>
+    <color name="yellow_button_bg_disabled">#FFCC7B</color>
+    <color name="yellow_button_bg_selected">#603B00</color>
+
+
+    <color name="toolbar_background">#1b2e3e</color>
+
+</resources>

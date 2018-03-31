@@ -1,0 +1,41 @@
+<com.landsofruin.companion.view.ClipedCommandPanelFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/command_panel_background"
+    android:clickable="true"
+    android:foreground="@drawable/command_panel_line"
+    android:visibility="gone">
+
+    <FrameLayout
+        android:id="@+id/scenario_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <com.landsofruin.companion.view.CornerCuttingFrameLayout
+        android:id="@+id/close_button"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="8dp"
+        android:background="@drawable/solid_yellow_button_background"
+        app:corner1="16dp"
+        app:corner2="16dp"
+        app:corner3="16dp"
+        app:corner4="16dp">
+
+        <com.landsofruin.companion.view.MechaFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="close"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFFFF"
+            android:textSize="28sp" />
+
+
+    </com.landsofruin.companion.view.CornerCuttingFrameLayout>
+
+
+</com.landsofruin.companion.view.ClipedCommandPanelFrameLayout>

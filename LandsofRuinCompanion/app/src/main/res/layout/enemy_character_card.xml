@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLevelLayout"
+    android:layout_width="215.5dp"
+    android:layout_height="320dp"
+    android:clickable="true">
+
+
+    <include layout="@layout/enemy_character_card_front" />
+
+
+    <FrameLayout
+        android:id="@+id/click_stealer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:background="@drawable/click_stealer_bg" />
+</FrameLayout>

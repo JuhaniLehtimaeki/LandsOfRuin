@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/rule_items_menu"
+        android:title="Inspect rule data" />
+
+    <item
+        android:id="@+id/hero_blueprints_menu"
+        android:title="Hero blueprints" />
+
+
+    <item
+        android:id="@+id/map_editor_menu"
+        android:title="Map editor" />
+
+
+
+</menu>

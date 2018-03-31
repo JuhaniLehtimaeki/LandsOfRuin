@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/feedback"
+        android:title="Feedback" />
+
+    <item
+        android:id="@+id/about_menu"
+        android:title="About LoR" />
+
+    <item
+        android:id="@+id/progress_menu"
+        android:title="Development progress" />
+
+
+    <item
+        android:id="@+id/tutorials_menu"
+        android:title="Read tutorials" />
+
+    <item
+        android:id="@+id/my_tribe_menu"
+        android:title="My tribe" />
+
+    <item
+        android:id="@+id/logout_menu"
+        android:title="Logout" />
+
+</menu>

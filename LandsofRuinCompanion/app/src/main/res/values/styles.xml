@@ -1,0 +1,72 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppThemeWithActionBar" parent="Theme.AppCompat" />
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/black</item>
+
+
+    </style>
+
+
+    <style name="lor_lobby_red_button" parent="@android:style/Widget.DeviceDefault.Button">
+        <item name="android:background">@drawable/selector_action_button</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+
+
+    <style name="character_section_header_text" parent="android:TextAppearance.Medium">
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="character_section_subheader_text" parent="android:TextAppearance.Medium">
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="early_access_label" parent="android:TextAppearance.Medium">
+        <item name="android:textColor">#FFCCCCCC</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="command_panel_subtitle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginTop">52dp</item>
+        <item name="android:textColor">#FF00effe</item>
+    </style>
+
+    <style name="command_panel_title">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textSize">17.5sp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textColor">#FFda7a04</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--<item name="colorAccent">#FFCC00</item>-->
+        <!--<item name="android:textColorPrimary">#FFFFFF</item>-->
+        <!--<item name="android:background">#5fa3d0</item>-->
+    </style>
+
+    <style name="setup_toolbar_title">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="setup_toolbar_sub_title">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>

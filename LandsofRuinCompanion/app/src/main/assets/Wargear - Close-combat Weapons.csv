@@ -1,0 +1,16 @@
+Type- 0,Category-1,ID-2,group-ID-3,Name-4,Mode name -5,Requires skills-6,Max targets-7,Modifier short-8,Modifier mid-9,Modifier long-10,Light infantry-11,Heavy infantry-12,Light armored-13,Heavy armored-14,Noise-15,Bullets per action-16,Clip size - 17,Clip name - 18,Weight -19,Clip weight -20,Camo modifier-21,Suppression-22,Suppression without hitting-23,Highlight priority - 24,GEAR value -25,clip GEAR value -26,maintanance GEAR value -27,image URI -28
+CC,Edged,1000,1000,Combat Knife,stab,1002,1,1,0,0,1,0,0,0,10,0,0,-,1,0,,15,0,1,5,0,2,
+CC,Blunt,1001,1001,Club,swing,1002,1,1,0,0,1,0,0,0,15,0,0,-,2,0,,15,0,1,5,0,1,
+CC,Hitech,1002,1002,Monofilament whip,swing,1003,3,0,0,0,2,1,0,0,20,0,0,-,0.5,0,,30,0,3,50,0,10,
+CC,Blunt,1003,1003,Improvised weapon,swing,10,1,0,0,0,1,0,0,0,10,0,0,-,0,0,0,5,0,0,0,0,0,file:///android_asset/weapon_images/improvided_weapon.jpg
+CC,Edged,1004,1004,Chainsaw,attack,1003,2,2,0,0,4,3,1,0,100,1,10,Fuel can,5,2,-25,50,10,3,100,30,10,
+CC,Edged,1010,1004,Chainsaw,wide arc attack,1003,4,1,0,0,2,1,0,0,150,2,10,Fuel can,5,2,-25,50,10,3,100,30,10,
+CC,Edged,1006,1006,Balean warblades,stab stab,1002,2,1,0,0,1,0,0,0,35,0,0,-,1.5,0,0,30,0,2,25,0,5,
+CC,Edged,1011,1006,Balean warblades,power stab,1002,1,2,0,0,1,0,0,0,35,0,0,-,1.5,0,0,30,0,2,25,0,5,
+CC,Blunt,999007,999007,Zombie,swing,-,1,0,0,0,1,0,0,0,10,0,0,-,1.5,0,0,33,0,0,0,0,0,
+CC,Edged,1008,1008,Disk saw,swing,1003,2,2,0,0,4,3,1,0,100,1,10,Fuel can,5,2,-25,50,10,3,100,30,10,file:///android_asset/weapon_images/balean_saw.jpg
+CC,Edged,1012,1008,Disk saw,wide arc attack,1003,4,1,0,0,2,1,0,0,100,2,10,Fuel can,5,2,-25,50,10,3,100,30,10,file:///android_asset/weapon_images/balean_saw.jpg
+CC,Edged,1009,1009,Pneumatic blade,attack,1002,2,4,0,0,2,0,0,0,50,0,0,-,4,0,-5,20,10,3,50,0,10,file:///android_asset/weapon_images/balean_power_fist.jpg
+CC,Blunt,999008,999008,Fast Zombie,swing,-,1,0,0,0,1,0,0,0,10,0,0,-,1.5,0,0,33,0,0,0,0,0,
+CC,Blunt,999009,999009,Fat Zombie,swing,-,1,0,0,0,2,0,0,0,10,0,0,-,1.5,0,0,33,0,0,0,0,0,
+CC,Blunt,899000,899000,Frenzy,effect,-,1,0,0,0,-1,0,0,0,0,0,0,-,0,0,0,0,0,0,0,0,0,

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.landsofruin.companion.view.CornerCuttingFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/change_scenario_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/solid_yellow_button_background"
+    android:enabled="false"
+    app:corner1="8dp"
+    app:corner2="8dp"
+    app:corner3="8dp"
+    app:corner4="8dp">
+
+    <com.landsofruin.companion.view.MechaFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="choose this role"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp" />
+
+</com.landsofruin.companion.view.CornerCuttingFrameLayout>

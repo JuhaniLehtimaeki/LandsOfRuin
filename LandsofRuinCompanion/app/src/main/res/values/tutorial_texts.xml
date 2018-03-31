@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tutorial_game_start_non_admin">You have joined a game. This is the setup phase. Your opponent will setup most of the game settings like scenario and map. You must choose your player role, table side and team.
+        \n\nOnce you\'ve selected your team and are happy with the selections made by your opponent select \"ready\" from the last page. The game starts once all players are ready.</string>
+    <string name="tutorial_game_start_admin">You have created a game. Other players can now join this game.
+    \nYou must select the scenario, your player role, the map, your table side and your team.
+    \n\nOnce you\'re done wait for your opponents to be ready and you can start the game at the last page.</string>
+
+    <string name="tutorial_action_phase_content">This is your action phase. During this phase you can move your characters up to the movement allowance described in the character card. You can also perform any actions you assigned to your characters last turn.
+    \n\nDon\'t worry about your character location on the map yet. That comes in the next game phase.
+    </string>
+
+    <string name="tutorial_game_ui_content">UI overview
+    </string>
+
+    <string name="tutorial_pregame">Pre-game phase is for setting up things that happened before the game starts. Deploy any hidden characters or
+        characters that should start the game already on the table. See the scenario description for more details.
+        \n\nOnce you\'re done with your pregame. Press ready from the phase indicator. The game will start once all players are ready with the pre-game phase.
+    </string>
+
+        <string name="tutorial_enemy_turn">It is now your opponent\'s turn. You can see actions performed by your opponent on your tablet.
+            \n\nYou can follow the turn progress from the turn phase indicator.
+            \n\nWhen your opponent is attacking any characters you will be able to confirm the results on your table. So, please keep eye on your tablet
+            on the opponent turn as well.
+    </string>
+
+
+     <string name="tutorial_action_phase_first">This is your first action phase. As in Lands of Ruin actions are assigned the previous turn
+         none of your characters have any action assigned (hey, there wasn\'t a previous turn!).
+         \n\nAll unused action points are always converted into movement allowance. In this turn all of your action points are converted into movement.
+         \nYou can move all of your characters up to the their movement allowance.
+         \n\nIf you team is not yet on the table (this depends on the scenario being played) select a single point from your table edge. That point is your entry point.
+         You can move all of your characters as if they were standing on that point at the start of this turn.
+    </string>
+
+
+     <string name="tutorial_movement_phase">This is your Movement phase.
+         \n\nIn this phase you need to tell the app where you characters are on the table. Select a character and then drag your finger on the
+         map view to position the character. Exactly positioning your character is not necessary. Placing them in the correct section is enough. Of course,
+         you can position them exactly to help you have a better image what\'s going on.
+    </string>
+
+    <string name="tutorial_command_phase">This is your Command phase.
+        \n\nIn this phase you plan your actions for the next turn. Think this phase as if commanding your characters or expressing their intention for action.
+        \n\nAny actions you assign to your characters can be performed next turn if you so chose. You do not have to perform them.
+        \n\nAll characters have 20 Action Points (APs) to use per turn. You can chose to distribute these points anyway you want. However, you can assign any action only once per turn. You cannot, for example,
+        shoot ranged weapon twice.
+        \n\nAll unused Action Points will automatically converted into movement. By default one unused Action Point allows the character to move 1\". This will be modified by the character\'s
+        load out as well as suppression.
+    </string>
+
+    <string name="tutorial_zombie_phase">Environment phase is when all the Rotters move and attack as well as all environmental effects like explosives are resolved.
+        \n\nMove Rotters towards the highlighted section center or if a target character is highlighted towards that character (see more details in Rotter movement rules).
+    </string>
+    <string name="tutorial_zombie_phase_2">Once you have completed all of your actions selecect \"ready\" from the phase indicator. Once all players are ready the game will proceed to the next phase.
+    </string>
+
+
+    <string name="tutorial_turn_structure_general">Lands of Ruin turn structure.</string>
+    <string name="tutorial_turn_structure_action">Action Phase - perform actions and move your character.</string>
+    <string name="tutorial_turn_structure_move">Sync Phase - Tell the app where your characters are now after they moved in the action phase.</string>
+    <string name="tutorial_turn_structure_command">Command Phase - Assign actions to your characters for the next turn.</string>
+    <string name="tutorial_turn_structure_zombie">Environment Phase - Rotters move and attack and all grenades etc are resolved.</string>
+
+
+    <string name="tutorial_zombie_movement_rules_general"><![CDATA[
+    Rotters are moved using following procedure:<br/><br/>
+    <b>1 - </b>Any Rotters within 10" of any non-downed character move directly towards the <b>closest</b> character.<br/><br/>
+    <b>2 - </b>Move all Rotters on the table towards the highlighted  character. If no character is highlighted move all rotters towards the
+     center of the highlighted section.<br/><br/>
+     <b>3 - </b>Add attacks to all characters in base-to-base contact with Rotters. If a Rotter is touching more than one character the player whose turn it is
+     selects the target.<br/><br/>
+     <b>4 - </b>Deploy new Rotters. They don't move or attack this turn.<br/><br/>
+
+
+
+]]></string>
+
+
+    <string name="tutorial_weapon_targets">Maximum number of targets that can be attacked with single action.</string>
+    <string name="tutorial_weapon_pli">Weapon power against light infantry targets. Note: all targets in the current game version count as light infantry!</string>
+    <string name="tutorial_weapon_phi">Weapon power against heavy infantry targets.</string>
+    <string name="tutorial_weapon_pla">Weapon power against light armoured targets.</string>
+    <string name="tutorial_weapon_pha">Weapon power against heavy armoured targets.</string>
+    <string name="tutorial_weapon_ba">Bullets per action. This amount of bullets is deducted from the character\'s ammo reserves when attack in this mode is performed.</string>
+    <string name="tutorial_weapon_short">(0\" - 10\") Modifier applied when targets are in short range. All close combat weapons always use short range.</string>
+    <string name="tutorial_weapon_mid">(10\" - 20\") Modifier applied when targets are in medium range.</string>
+    <string name="tutorial_weapon_long">(20\"+) Modifier applied when targets are in long range.</string>
+    <string name="tutorial_weapon_noise">Amount of noise caused by one attack in this mode.</string>
+    <string name="tutorial_weapon_suppression">Suppression caused to the target by this weapon mode. The first number is the suppression number that is caused by simply targeting the target. The second number is added if the attack is successful.</string>
+    <string name="tutorial_weapon_camo">Camouflage modifier applied to the character wearing this weapon. Weapon modes do not affect the rating. The camouflage modifier is applied to the character only once.</string>
+
+
+
+    <string name="tutorial_morale_text">A new morale state is calculated at the start of each of your command phase after any pending unresolved hits are resolved.
+\nCumulative negative morale effects suffered during the turn are deducted from the cumulative positive morale effect.
+        \nIf the resulting morale value is negative it is compared to your leader\'s leadership value. If the negative morale effect is larger than
+        your leader\'s leadership value your leader is incapable of handling the events
+        happening that turn. The result is your team getting confused.
+        \nthe difference of the leader\'s leadership value and the turns moral value is deducted from your team\'s permanent morale pool.
+        \nOnce the morale pool reaches 0 your team has paniced and cannot perform any action for the rest of the game.
+
+    </string>
+</resources>

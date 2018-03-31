@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="your_action">
+        <item>Perform actions and move your characters.</item>
+    </string-array>
+
+
+    <string-array name="your_sync">
+        <item>Tell the Command Console where your characters are.</item>
+        <item>1) Select a card.</item>
+        <item>2) Tap &amp; drag on the map.</item>
+    </string-array>
+
+
+    <string-array name="your_command">
+        <item>Assign actions for your next turn.</item>
+    </string-array>
+
+
+    <string-array name="environment">
+        <item>1) Add any attacking or detected Rotters.</item>
+        <item>2) Move all Rotters using the Rotter movement rules.</item>
+        <item>3) Handle all explosions and add hits, remove Rotters if needed.</item>
+        <item>4) Add Rotter hits to any character in base-to-base contact.</item>
+    </string-array>
+
+
+    <string-array name="enemy_turn">
+        <item>Your opponent is playing.</item>
+    </string-array>
+
+    <string-array name="setup">
+        <item>1) Deploy Rotters indicated on the map.</item>
+        <item>2) Deploy any characters that canbe placed to the map before game.</item>
+    </string-array>
+
+</resources>

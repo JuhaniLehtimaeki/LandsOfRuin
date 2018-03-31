@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/mode"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="2dp"
+        android:singleLine="true"
+        android:paddingLeft="2dp"
+        android:background="#FF5a5a5a"
+        android:text="mode"/>
+
+    <TextView
+        android:id="@+id/targets"
+        android:layout_width="40dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="2dp"
+        android:background="#FFFFFFFF"
+        android:singleLine="true"
+        android:text="max targets"
+        android:textColor="#FF000000"/>
+
+
+    <TextView
+        android:id="@+id/power"
+        android:layout_width="40dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="2dp"
+        android:background="#FFcccccc"
+        android:text="power"
+        android:singleLine="true"
+        android:textColor="#FF000000"/>
+
+    <TextView
+        android:id="@+id/power_hi"
+        android:layout_width="40dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="2dp"
+        android:background="#FFcccccc"
+        android:text="power"
+        android:singleLine="true"
+        android:textColor="#FF000000"/>
+
+
+    <TextView
+        android:id="@+id/power_la"
+        android:layout_width="40dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="2dp"
+        android:background="#FFcccccc"
+        android:text="power"
+        android:singleLine="true"
+        android:textColor="#FF000000"/>
+
+
+    <TextView
+        android:id="@+id/power_ha"
+        android:layout_width="40dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="2dp"
+        android:background="#FFcccccc"
+        android:singleLine="true"
+        android:textColor="#FF000000"/>
+
+
+    <TextView
+        android:id="@+id/bullets_per_action"
+        android:layout_width="40dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="2dp"
+        android:background="#FFFFFFFF"
+        android:singleLine="true"
+        android:textColor="#FF000000"/>
+
+
+    <TextView
+        android:id="@+id/mod_short"
+        android:layout_width="40dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="2dp"
+        android:background="#FFcccccc"
+        android:singleLine="true"
+        android:textColor="#FF000000"/>
+
+
+    <TextView
+        android:id="@+id/mod_mid"
+        android:layout_width="40dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="2dp"
+        android:background="#FFcccccc"
+        android:singleLine="true"
+        android:textColor="#FF000000"/>
+
+
+    <TextView
+        android:id="@+id/mod_long"
+        android:layout_width="40dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="2dp"
+        android:background="#FFcccccc"
+        android:singleLine="true"
+        android:textColor="#FF000000"/>
+
+    <TextView
+        android:id="@+id/noise"
+        android:layout_width="40dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="2dp"
+        android:background="#FFFFFFFF"
+        android:singleLine="true"
+        android:textColor="#FF000000"/>
+
+
+    <TextView
+        android:id="@+id/suppression"
+        android:layout_width="60dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="2dp"
+        android:background="#FFFFFFFF"
+        android:singleLine="true"
+        android:textColor="#FF000000"/>
+
+
+</LinearLayout>

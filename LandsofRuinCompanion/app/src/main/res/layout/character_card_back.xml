@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue_button_bg"
+    android:orientation="vertical"
+    android:padding="1dp"
+    android:rotationY="180"
+    android:visibility="gone">
+
+
+    <FrameLayout
+        android:id="@+id/character_info_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/character_name_back"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/command_panel_background" />
+
+
+    <com.landsofruin.companion.view.MechaFontTextView
+        android:id="@+id/character_name_back"
+        style="@style/character_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:singleLine="true" />
+
+
+    <ImageButton
+        android:id="@+id/flip_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#00000000"
+        android:clickable="true"
+        android:paddingBottom="4dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="4dp"
+        android:paddingTop="16dp"
+        android:src="@drawable/flip_map_button" />
+
+
+</RelativeLayout>
